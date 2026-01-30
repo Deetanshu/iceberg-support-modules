@@ -1,0 +1,84 @@
+/* Iceberg Test Dashboard - Custom Styles */
+
+/* Fix dropdown text color (white text on white background issue) */
+.Select-value-label,
+.Select-option,
+.Select-placeholder,
+.Select-input input,
+.VirtualizedSelectOption,
+.Select-menu-outer,
+.Select-menu,
+.Select-noresults {
+    color: #333333 !important;
+}
+
+/* Dropdown menu styling */
+.Select-menu-outer {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E0E0E0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Dropdown option hover state */
+.Select-option:hover,
+.VirtualizedSelectOption:hover,
+.Select-option.is-focused {
+    background-color: #F5F5F5 !important;
+    color: #333333 !important;
+}
+
+/* Selected option styling */
+.Select-option.is-selected {
+    background-color: #E3F2FD !important;
+    color: #333333 !important;
+}
+
+/* Dash core components dropdown styling */
+.dash-dropdown .Select-control {
+    background-color: #FFFFFF !important;
+    border-color: #E0E0E0 !important;
+}
+
+.dash-dropdown .Select-value {
+    color: #333333 !important;
+}
+
+.dash-dropdown .Select-input > input {
+    color: #333333 !important;
+}
+
+/* DatePicker styling */
+.DateInput_input {
+    color: #333333 !important;
+    background-color: #FFFFFF !important;
+}
+
+/* Ensure all dropdown menus have proper text color */
+div[class*="dropdown"] .Select-menu-outer,
+div[class*="Dropdown"] .Select-menu-outer {
+    color: #333333 !important;
+}
+
+/* Fix for react-select based dropdowns */
+.css-1uccc91-singleValue,
+.css-1wa3eu0-placeholder,
+.css-1g6gooi,
+.css-b8ldur-Input input {
+    color: #333333 !important;
+}
+
+.css-26l3qy-menu,
+.css-4ljt47-MenuList {
+    background-color: #FFFFFF !important;
+}
+
+.css-1n7v3ny-option,
+.css-yt9ioa-option {
+    color: #333333 !important;
+}
+
+.css-1n7v3ny-option:hover,
+.css-9gakcf-option {
+    background-color: #F5F5F5 !important;
+    color: #333333 !important;
+}
