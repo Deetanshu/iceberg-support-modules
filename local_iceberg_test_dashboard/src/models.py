@@ -85,6 +85,8 @@ class IndicatorData:
     intuition_text: Optional[str] = None  # AI-generated market insight
     intuition_confidence: Optional[float] = None  # FIX-042: Confidence for intuition
     intuition_recommendations: Optional[Dict[str, str]] = None  # FIX-042: {"low_risk": "23200CE", "medium_risk": "23300CE"}
+    call_coi_sum: Optional[float] = None  # Sum of Call COI across strike range (from support_fields)
+    put_coi_sum: Optional[float] = None  # Sum of Put COI across strike range (from support_fields)
     ts: datetime = field(default_factory=lambda: datetime.now(IST))
 
 
@@ -113,6 +115,7 @@ class OptionStrike:
     strike_skew: Optional[float] = None
     call_ltp: Optional[float] = None
     put_ltp: Optional[float] = None
+    signal: Optional[str] = None  # Per-strike signal: STRONG_BUY, BUY, NEUTRAL, SELL, STRONG_SELL
 
 
 @dataclass

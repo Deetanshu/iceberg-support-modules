@@ -406,6 +406,26 @@ class TestParseIndicatorUpdate:
         assert symbol == "nifty"
         assert mode == "current"
 
+    def test_parse_indicator_update_adr_string_to_float(self):
+        """Should convert ADR from string to float (API returns string in SSE)."""
+        event = {
+            "symbol": "nifty",
+            "mode": "current",
+            "indicators": {
+                "skew": -0.8915,
+                "pcr": 0.1595,
+                "adr": "1.08",  # String from SSE API
+                "signal": "STRONG_SELL",
+            },
+            "timestamp": "2026-02-02T06:47:17",
+        }
+
+        symbol, mode, indicators = parse_indicator_update(event)
+
+        assert symbol == "nifty"
+        assert indicators.adr == 1.08
+        assert isinstance(indicators.adr, float)
+
 
 class TestParseOptionChainUpdate:
     """Tests for SSE option_chain_update parsing (Requirement 12.5)."""

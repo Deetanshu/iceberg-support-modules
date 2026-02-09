@@ -1926,7 +1926,28 @@ def fetch_historical_data(
     
     # Skew/PCR chart
     if skew_history or pcr_history:
-        skew_pcr_fig = create_skew_pcr_chart(skew_history, pcr_history, symbol)
+        # Combine separate skew and pcr history lists into tuples
+        # Historical API returns separate lists, but chart expects (ts, skew, pcr) tuples
+        combined_history = []
+        max_len = max(len(skew_history) if skew_history else 0, len(pcr_history) if pcr_history else 0)
+        for i in range(max_len):
+            ts = None
+            skew_val = None
+            pcr_val = None
+            if skew_history and i < len(skew_history):
+                entry = skew_history[i]
+                if isinstance(entry, (list, tuple)) and len(entry) >= 2:
+                    ts = entry[0]
+                    skew_val = entry[1]
+            if pcr_history and i < len(pcr_history):
+                entry = pcr_history[i]
+                if isinstance(entry, (list, tuple)) and len(entry) >= 2:
+                    if ts is None:
+                        ts = entry[0]
+                    pcr_val = entry[1]
+            if ts is not None:
+                combined_history.append((ts, skew_val, pcr_val))
+        skew_pcr_fig = create_skew_pcr_chart(combined_history, symbol)
     else:
         skew_pcr_fig = create_empty_chart(f"No Skew/PCR history for {symbol.upper()}")
     

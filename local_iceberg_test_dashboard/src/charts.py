@@ -587,7 +587,7 @@ def create_skew_pcr_chart(
             showgrid=True,
             zeroline=True,
             zerolinecolor="rgba(255, 255, 255, 0.3)",
-            range=[-1.0, 1.0],  # Skew ranges from -1 to +1
+            range=[-2.0, 2.0],  # Skew ranges from -2 to +2
         ),
         # Secondary y-axis (PCR)
         yaxis2=dict(
@@ -597,6 +597,7 @@ def create_skew_pcr_chart(
             overlaying="y",
             side="right",
             showgrid=False,
+            range=[0.4, 1.6],  # PCR ranges from 0.4 to 1.6
         ),
     )
 

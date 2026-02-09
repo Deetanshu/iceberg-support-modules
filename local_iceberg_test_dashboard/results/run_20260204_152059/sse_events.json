@@ -1,0 +1,4298 @@
+[
+  {
+    "received_at": 1770198660.6543171,
+    "received_at_iso": "2026-02-04T15:21:00.654335",
+    "event_type": "snapshot",
+    "event_id": "27361a91-ba4e-407c-a1c0-4f80286295ac",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:51:00.643355+00:00",
+      "event_id": "27361a91-ba4e-407c-a1c0-4f80286295ac",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "nifty",
+        "mode": "current",
+        "indicators": {
+          "skew": 0.302,
+          "raw_skew": 0.302,
+          "pcr": 1.195,
+          "adr": "3.17",
+          "signal": "BUY",
+          "skew_confidence": 1.0,
+          "rsi": 55.32,
+          "ema_5": 25784.63,
+          "ema_9": 25787.63,
+          "ema_13": 25787.14,
+          "ema_21": 25782.15,
+          "ema_50": 25767.74,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 25675.9667,
+          "pivot_point": 25675.9667,
+          "support_fields": {
+            "skew_denominator_coi": 52214370.0,
+            "skew_activity_abs_coi": 52214370.0,
+            "pcr_put_oi_sum": 57941845.0,
+            "pcr_call_oi_sum": 48486035.0,
+            "put_coi_sum": 33990710.0,
+            "call_coi_sum": 18223660.0
+          },
+          "intuition_text": "The current market bias appears bearish, indicated by a relatively high put-call ratio (PCR) of 1.1950 and a skew of 0.3020, suggesting increased demand for puts over calls. The advance/decline ratio at 3.17 indicates strong upward movement in individual stocks, but the higher put open interest (COI) compared to call COI suggests caution among traders. Given these mixed signals, consider looking at protective strategies, potentially using put options to hedge against downside risk."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198660.654388,
+    "received_at_iso": "2026-02-04T15:21:00.654403",
+    "event_type": "snapshot",
+    "event_id": "c8f055dd-8f5d-4e10-864e-e7bfd1c1dd07",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:51:00.643400+00:00",
+      "event_id": "c8f055dd-8f5d-4e10-864e-e7bfd1c1dd07",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "nifty",
+        "mode": "positional",
+        "indicators": {
+          "skew": 0.1834,
+          "raw_skew": 0.1834,
+          "pcr": 0.7548,
+          "adr": "3.17",
+          "signal": "NEUTRAL",
+          "skew_confidence": 1.0,
+          "rsi": 55.32,
+          "ema_5": 25784.63,
+          "ema_9": 25787.63,
+          "ema_13": 25787.14,
+          "ema_21": 25782.15,
+          "ema_50": 25767.74,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 25675.9667,
+          "pivot_point": 25675.9667,
+          "support_fields": {
+            "skew_denominator_coi": 3150355.0,
+            "skew_activity_abs_coi": 3150355.0,
+            "pcr_put_oi_sum": 4407130.0,
+            "pcr_call_oi_sum": 5838560.0,
+            "put_coi_sum": 1864135.0,
+            "call_coi_sum": 1286220.0
+          },
+          "intuition_text": "The current market bias appears neutral, given the mixed signals from the indicators. The low Put-Call Ratio suggests a lack of bearish sentiment, while the strong Advance/Decline Ratio indicates positive breadth; however, the higher Put COI compared to Call COI indicates some hedging against potential downside. Consider looking at protective puts if volatility increases or waiting for clearer directional signals before making any positioning decisions."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198660.6544378,
+    "received_at_iso": "2026-02-04T15:21:00.654445",
+    "event_type": "snapshot",
+    "event_id": "52caced7-777f-4cf4-9e75-4830257a6f65",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:51:00.643421+00:00",
+      "event_id": "52caced7-777f-4cf4-9e75-4830257a6f65",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "banknifty",
+        "mode": "current",
+        "indicators": {
+          "skew": 0.397,
+          "raw_skew": 0.397,
+          "pcr": 1.479,
+          "adr": "2.25",
+          "signal": "BUY",
+          "skew_confidence": 1.0,
+          "rsi": 49.34,
+          "ema_5": 60269.01,
+          "ema_9": 60284.52,
+          "ema_13": 60289.07,
+          "ema_21": 60284.36,
+          "ema_50": 60253.29,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 59233.15,
+          "pivot_point": 59233.15,
+          "support_fields": {
+            "skew_denominator_coi": -4179930.0,
+            "skew_activity_abs_coi": 4179930.0,
+            "pcr_put_oi_sum": 77160.0,
+            "pcr_call_oi_sum": 52170.0,
+            "put_coi_sum": -2919660.0,
+            "call_coi_sum": -1260270.0
+          },
+          "intuition_text": "The current market bias appears to be bearish, indicated by a high Put-Call Ratio (PCR) of 1.4790 alongside a negative Call and Put Change in Open Interest (COI). The Advance/Decline Ratio (ADR) of 2.25 suggests a stronger decline among stocks, reinforcing the bearish sentiment. Traders might consider looking at protective options strategies, such as buying Put options, to hedge against potential downside risks."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198660.654478,
+    "received_at_iso": "2026-02-04T15:21:00.654484",
+    "event_type": "snapshot",
+    "event_id": "6e438648-616d-4869-ae50-3fa1de2b6697",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:51:00.643436+00:00",
+      "event_id": "6e438648-616d-4869-ae50-3fa1de2b6697",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "banknifty",
+        "mode": "positional",
+        "indicators": {
+          "skew": 0.7363,
+          "raw_skew": 0.7363,
+          "pcr": 2.7123,
+          "adr": "2.25",
+          "signal": "NEUTRAL",
+          "skew_confidence": 0.0,
+          "rsi": 49.34,
+          "ema_5": 60269.01,
+          "ema_9": 60284.52,
+          "ema_13": 60289.07,
+          "ema_21": 60284.36,
+          "ema_50": 60253.29,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 59233.15,
+          "pivot_point": 59233.15,
+          "support_fields": {
+            "skew_denominator_coi": 2730.0,
+            "skew_activity_abs_coi": 2730.0,
+            "pcr_put_oi_sum": 5940.0,
+            "pcr_call_oi_sum": 2190.0,
+            "put_coi_sum": 2370.0,
+            "call_coi_sum": 360.0
+          },
+          "intuition_text": "The current market bias appears bullish, supported by a high put-call ratio of 2.7123 indicating strong buying interest in puts relative to calls, potentially signaling caution among traders. The skew of 0.7363 and the advance/decline ratio of 2.25 further reinforce this bullish sentiment, suggesting that more stocks are advancing than declining. Traders may consider looking at call options for potential upward movements, while also being mindful of hedging strategies given the elevated put volumes."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198660.654508,
+    "received_at_iso": "2026-02-04T15:21:00.654514",
+    "event_type": "snapshot",
+    "event_id": "c04c5b19-db93-41ee-b7f7-638256c75651",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:51:00.643449+00:00",
+      "event_id": "c04c5b19-db93-41ee-b7f7-638256c75651",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "sensex",
+        "mode": "current",
+        "indicators": {
+          "skew": null,
+          "raw_skew": null,
+          "pcr": null,
+          "adr": "3.29",
+          "signal": "NEUTRAL",
+          "skew_confidence": 0.0,
+          "rsi": 59.5,
+          "ema_5": 83850.09,
+          "ema_9": 83855.55,
+          "ema_13": 83851.2,
+          "ema_21": 83831.59,
+          "ema_50": 83784.42,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 83591.18,
+          "pivot_point": 83591.18,
+          "support_fields": {
+            "skew_denominator_coi": null,
+            "skew_activity_abs_coi": null,
+            "pcr_put_oi_sum": null,
+            "pcr_call_oi_sum": null,
+            "put_coi_sum": null,
+            "call_coi_sum": null
+          },
+          "intuition_text": "The current market bias appears bullish, as indicated by the strong Advance/Decline Ratio of 3.29, suggesting a significant number of advancing stocks versus declining ones. This positive momentum may indicate investor confidence in the market. Traders might consider looking at call options (CE) to capitalize on this bullish sentiment, while remaining mindful of potential market reversals."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198660.6545439,
+    "received_at_iso": "2026-02-04T15:21:00.654550",
+    "event_type": "snapshot",
+    "event_id": "bd96e049-2827-4245-97a2-e859b96fc327",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:51:00.643461+00:00",
+      "event_id": "bd96e049-2827-4245-97a2-e859b96fc327",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "sensex",
+        "mode": "positional",
+        "indicators": {
+          "skew": -1.914,
+          "raw_skew": -1.914,
+          "pcr": 1.7698,
+          "adr": "3.29",
+          "signal": "STRONG_SELL",
+          "skew_confidence": 0.5225,
+          "rsi": 59.5,
+          "ema_5": 83850.09,
+          "ema_9": 83855.55,
+          "ema_13": 83851.2,
+          "ema_21": 83831.59,
+          "ema_50": 83784.42,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 83591.18,
+          "pivot_point": 83591.18,
+          "support_fields": {
+            "skew_denominator_coi": -28360.0,
+            "skew_activity_abs_coi": 54280.0,
+            "pcr_put_oi_sum": 214000.0,
+            "pcr_call_oi_sum": 120920.0,
+            "put_coi_sum": 12960.0,
+            "call_coi_sum": -41320.0
+          },
+          "intuition_text": "The current market bias appears bullish, supported by a high Advance/Decline Ratio of 3.29 and a Put-Call Ratio of 1.7698, indicating strong bullish sentiment among traders. The negative skew of -1.9140 suggests a relatively high demand for puts, which could indicate some hedging against potential downside. Given these conditions, consider looking at call options for potential upside exposure while staying aware of the hedging sentiment."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198660.654578,
+    "received_at_iso": "2026-02-04T15:21:00.654586",
+    "event_type": "snapshot",
+    "event_id": "77ed2639-9265-4bf2-b675-8f3ff17c71b8",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:51:00.643473+00:00",
+      "event_id": "77ed2639-9265-4bf2-b675-8f3ff17c71b8",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "finnifty",
+        "mode": "current",
+        "indicators": {
+          "skew": -0.3879,
+          "raw_skew": -0.3879,
+          "pcr": 1.015,
+          "adr": "2.17",
+          "signal": "SELL",
+          "skew_confidence": 1.0,
+          "rsi": 40.7,
+          "ema_5": 27817.62,
+          "ema_9": 27824.72,
+          "ema_13": 27827.91,
+          "ema_21": 27827.53,
+          "ema_50": 27810.66,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": null,
+          "pivot_point": null,
+          "support_fields": {
+            "skew_denominator_coi": -377220.0,
+            "skew_activity_abs_coi": 377220.0,
+            "pcr_put_oi_sum": 207600.0,
+            "pcr_call_oi_sum": 204540.0,
+            "put_coi_sum": -115440.0,
+            "call_coi_sum": -261780.0
+          },
+          "intuition_text": "The current market bias appears bullish, supported by a high Advance/Decline Ratio of 2.17, indicating stronger upward momentum among stocks. However, the negative skew and a Put-Call Ratio slightly above 1 suggest some caution, as there is a higher demand for puts than calls. Traders might consider looking at call options (CE) for exposure while remaining mindful of potential market corrections."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198660.654658,
+    "received_at_iso": "2026-02-04T15:21:00.654664",
+    "event_type": "snapshot",
+    "event_id": "3e6ad61c-6157-48e4-a638-b234976e414b",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:51:00.643485+00:00",
+      "event_id": "3e6ad61c-6157-48e4-a638-b234976e414b",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "finnifty",
+        "mode": "positional",
+        "indicators": {
+          "skew": null,
+          "raw_skew": null,
+          "pcr": null,
+          "adr": "2.17",
+          "signal": "NEUTRAL",
+          "skew_confidence": 0.0,
+          "rsi": 40.7,
+          "ema_5": 27817.62,
+          "ema_9": 27824.72,
+          "ema_13": 27827.91,
+          "ema_21": 27827.53,
+          "ema_50": 27810.66,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": null,
+          "pivot_point": null,
+          "support_fields": {
+            "skew_denominator_coi": 0.0,
+            "skew_activity_abs_coi": 0.0,
+            "pcr_put_oi_sum": 0.0,
+            "pcr_call_oi_sum": 0.0,
+            "put_coi_sum": 0.0,
+            "call_coi_sum": 0.0
+          },
+          "intuition_text": "We don't recommend trading next month's options for FINNIFTY"
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198688.89829,
+    "received_at_iso": "2026-02-04T15:21:28.899208",
+    "event_type": "indicator_update",
+    "event_id": "cedfa77c-5f22-4a56-9328-e6fb68532395",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:51:28.786512+00:00",
+      "event_id": "cedfa77c-5f22-4a56-9328-e6fb68532395",
+      "symbol": "nifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.302,
+        "raw_skew": 0.302,
+        "pcr": 1.195,
+        "adr": "3.17",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 55.32,
+        "ema_5": 25784.63,
+        "ema_9": 25787.63,
+        "ema_13": 25787.14,
+        "ema_21": 25782.15,
+        "ema_50": 25767.74,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 52214370.0,
+        "skew_activity_abs_coi": 52214370.0,
+        "pcr_put_oi_sum": 57941845.0,
+        "pcr_call_oi_sum": 48486035.0,
+        "put_coi_sum": 33990710.0,
+        "call_coi_sum": 18223660.0
+      },
+      "intuition_text": "The current market bias appears bearish, indicated by a relatively high put-call ratio (PCR) of 1.1950 and a skew of 0.3020, suggesting increased demand for puts over calls. The advance/decline ratio at 3.17 indicates strong upward movement in individual stocks, but the higher put open interest (COI) compared to call COI suggests caution among traders. Given these mixed signals, consider looking at protective strategies, potentially using put options to hedge against downside risk."
+    }
+  },
+  {
+    "received_at": 1770198688.900383,
+    "received_at_iso": "2026-02-04T15:21:28.900407",
+    "event_type": "indicator_update",
+    "event_id": "eff9f8a2-972b-4c19-aa1a-3b3cc2d16da5",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:51:28.786665+00:00",
+      "event_id": "eff9f8a2-972b-4c19-aa1a-3b3cc2d16da5",
+      "symbol": "nifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.1834,
+        "raw_skew": 0.1834,
+        "pcr": 0.7548,
+        "adr": "3.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 1.0,
+        "rsi": 55.32,
+        "ema_5": 25784.63,
+        "ema_9": 25787.63,
+        "ema_13": 25787.14,
+        "ema_21": 25782.15,
+        "ema_50": 25767.74,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 3150355.0,
+        "skew_activity_abs_coi": 3150355.0,
+        "pcr_put_oi_sum": 4407130.0,
+        "pcr_call_oi_sum": 5838560.0,
+        "put_coi_sum": 1864135.0,
+        "call_coi_sum": 1286220.0
+      },
+      "intuition_text": "The current market bias appears neutral, given the mixed signals from the indicators. The low Put-Call Ratio suggests a lack of bearish sentiment, while the strong Advance/Decline Ratio indicates positive breadth; however, the higher Put COI compared to Call COI indicates some hedging against potential downside. Consider looking at protective puts if volatility increases or waiting for clearer directional signals before making any positioning decisions."
+    }
+  },
+  {
+    "received_at": 1770198688.9004889,
+    "received_at_iso": "2026-02-04T15:21:28.900502",
+    "event_type": "indicator_update",
+    "event_id": "3851fb20-8a0a-4eb3-9906-da95e8601ddb",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:51:28.786802+00:00",
+      "event_id": "3851fb20-8a0a-4eb3-9906-da95e8601ddb",
+      "symbol": "banknifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.397,
+        "raw_skew": 0.397,
+        "pcr": 1.479,
+        "adr": "2.25",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": -4179930.0,
+        "skew_activity_abs_coi": 4179930.0,
+        "pcr_put_oi_sum": 77160.0,
+        "pcr_call_oi_sum": 52170.0,
+        "put_coi_sum": -2919660.0,
+        "call_coi_sum": -1260270.0
+      },
+      "intuition_text": "The current market bias appears to be bearish, indicated by a high Put-Call Ratio (PCR) of 1.4790 alongside a negative Call and Put Change in Open Interest (COI). The Advance/Decline Ratio (ADR) of 2.25 suggests a stronger decline among stocks, reinforcing the bearish sentiment. Traders might consider looking at protective options strategies, such as buying Put options, to hedge against potential downside risks."
+    }
+  },
+  {
+    "received_at": 1770198688.900535,
+    "received_at_iso": "2026-02-04T15:21:28.900541",
+    "event_type": "indicator_update",
+    "event_id": "916fe5d6-71b2-4359-a1a9-545e987df724",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:51:28.786902+00:00",
+      "event_id": "916fe5d6-71b2-4359-a1a9-545e987df724",
+      "symbol": "banknifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.7363,
+        "raw_skew": 0.7363,
+        "pcr": 2.7123,
+        "adr": "2.25",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": 2730.0,
+        "skew_activity_abs_coi": 2730.0,
+        "pcr_put_oi_sum": 5940.0,
+        "pcr_call_oi_sum": 2190.0,
+        "put_coi_sum": 2370.0,
+        "call_coi_sum": 360.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a high put-call ratio of 2.7123 indicating strong buying interest in puts relative to calls, potentially signaling caution among traders. The skew of 0.7363 and the advance/decline ratio of 2.25 further reinforce this bullish sentiment, suggesting that more stocks are advancing than declining. Traders may consider looking at call options for potential upward movements, while also being mindful of hedging strategies given the elevated put volumes."
+    }
+  },
+  {
+    "received_at": 1770198688.900577,
+    "received_at_iso": "2026-02-04T15:21:28.900585",
+    "event_type": "indicator_update",
+    "event_id": "e50b4a3a-7360-4391-b417-53bbb6b0ebe7",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:51:28.786925+00:00",
+      "event_id": "e50b4a3a-7360-4391-b417-53bbb6b0ebe7",
+      "symbol": "sensex",
+      "mode": "current",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "3.29",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": null,
+        "skew_activity_abs_coi": null,
+        "pcr_put_oi_sum": null,
+        "pcr_call_oi_sum": null,
+        "put_coi_sum": null,
+        "call_coi_sum": null
+      },
+      "intuition_text": "The current market bias appears bullish, as indicated by the strong Advance/Decline Ratio of 3.29, suggesting a significant number of advancing stocks versus declining ones. This positive momentum may indicate investor confidence in the market. Traders might consider looking at call options (CE) to capitalize on this bullish sentiment, while remaining mindful of potential market reversals."
+    }
+  },
+  {
+    "received_at": 1770198688.900621,
+    "received_at_iso": "2026-02-04T15:21:28.900626",
+    "event_type": "indicator_update",
+    "event_id": "a2f011f4-6367-43f8-b69e-e77b2858ed0c",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:51:28.786947+00:00",
+      "event_id": "a2f011f4-6367-43f8-b69e-e77b2858ed0c",
+      "symbol": "sensex",
+      "mode": "positional",
+      "indicators": {
+        "skew": -1.914,
+        "raw_skew": -1.914,
+        "pcr": 1.7698,
+        "adr": "3.29",
+        "signal": "STRONG_SELL",
+        "skew_confidence": 0.5225,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": -28360.0,
+        "skew_activity_abs_coi": 54280.0,
+        "pcr_put_oi_sum": 214000.0,
+        "pcr_call_oi_sum": 120920.0,
+        "put_coi_sum": 12960.0,
+        "call_coi_sum": -41320.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a high Advance/Decline Ratio of 3.29 and a Put-Call Ratio of 1.7698, indicating strong bullish sentiment among traders. The negative skew of -1.9140 suggests a relatively high demand for puts, which could indicate some hedging against potential downside. Given these conditions, consider looking at call options for potential upside exposure while staying aware of the hedging sentiment."
+    }
+  },
+  {
+    "received_at": 1770198688.900651,
+    "received_at_iso": "2026-02-04T15:21:28.900658",
+    "event_type": "indicator_update",
+    "event_id": "d0257f66-daa9-4a67-a5c1-6d33f67b0ebf",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:51:28.786968+00:00",
+      "event_id": "d0257f66-daa9-4a67-a5c1-6d33f67b0ebf",
+      "symbol": "finnifty",
+      "mode": "current",
+      "indicators": {
+        "skew": -0.3879,
+        "raw_skew": -0.3879,
+        "pcr": 1.015,
+        "adr": "2.17",
+        "signal": "SELL",
+        "skew_confidence": 1.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": -377220.0,
+        "skew_activity_abs_coi": 377220.0,
+        "pcr_put_oi_sum": 207600.0,
+        "pcr_call_oi_sum": 204540.0,
+        "put_coi_sum": -115440.0,
+        "call_coi_sum": -261780.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a high Advance/Decline Ratio of 2.17, indicating stronger upward momentum among stocks. However, the negative skew and a Put-Call Ratio slightly above 1 suggest some caution, as there is a higher demand for puts than calls. Traders might consider looking at call options (CE) for exposure while remaining mindful of potential market corrections."
+    }
+  },
+  {
+    "received_at": 1770198688.900734,
+    "received_at_iso": "2026-02-04T15:21:28.901046",
+    "event_type": "indicator_update",
+    "event_id": "3b761414-a42f-4542-b3ce-3851191c67b2",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:51:28.786994+00:00",
+      "event_id": "3b761414-a42f-4542-b3ce-3851191c67b2",
+      "symbol": "finnifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "2.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": 0.0,
+        "skew_activity_abs_coi": 0.0,
+        "pcr_put_oi_sum": 0.0,
+        "pcr_call_oi_sum": 0.0,
+        "put_coi_sum": 0.0,
+        "call_coi_sum": 0.0
+      },
+      "intuition_text": "We don't recommend trading next month's options for FINNIFTY"
+    }
+  },
+  {
+    "received_at": 1770198718.801126,
+    "received_at_iso": "2026-02-04T15:21:58.801165",
+    "event_type": "heartbeat",
+    "event_id": "1257c707-0742-4ae9-8486-74f4b558c96b",
+    "data": {
+      "event_type": "heartbeat",
+      "timestamp": "2026-02-04T09:51:58.795988+00:00",
+      "event_id": "1257c707-0742-4ae9-8486-74f4b558c96b",
+      "sequence": 24
+    }
+  },
+  {
+    "received_at": 1770198732.7190971,
+    "received_at_iso": "2026-02-04T15:22:12.719601",
+    "event_type": "option_chain_update",
+    "event_id": "da9078db-4927-4e3c-82ee-c53fa26ee157",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:52:12.458416+00:00",
+      "event_id": "da9078db-4927-4e3c-82ee-c53fa26ee157",
+      "symbol": "nifty",
+      "mode": "current",
+      "expiry": "2026-02-10",
+      "underlying": 25762.15,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 25300.0,
+          "call_oi": 826865.0,
+          "put_oi": 3603730.0,
+          "call_coi": -73775.0,
+          "put_coi": 1422720.0,
+          "call_vol": 1127165,
+          "put_vol": 38455365,
+          "strike_skew": 1.1094,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25350.0,
+          "call_oi": 99970.0,
+          "put_oi": 2299830.0,
+          "call_coi": -32890.0,
+          "put_coi": 1771835.0,
+          "call_vol": 345800,
+          "put_vol": 26713700,
+          "strike_skew": 1.0378,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25400.0,
+          "call_oi": 716430.0,
+          "put_oi": 4087265.0,
+          "call_coi": 27430.0,
+          "put_coi": 1922700.0,
+          "call_vol": 2049645,
+          "put_vol": 52226720,
+          "strike_skew": 0.9719,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25450.0,
+          "call_oi": 153075.0,
+          "put_oi": 1916850.0,
+          "call_coi": -21840.0,
+          "put_coi": 1400750.0,
+          "call_vol": 1128920,
+          "put_vol": 31713435,
+          "strike_skew": 1.0317,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25500.0,
+          "call_oi": 1883895.0,
+          "put_oi": 7542015.0,
+          "call_coi": -287755.0,
+          "put_coi": 3391960.0,
+          "call_vol": 15273635,
+          "put_vol": 117329355,
+          "strike_skew": 1.1854,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25550.0,
+          "call_oi": 208130.0,
+          "put_oi": 2432365.0,
+          "call_coi": 62010.0,
+          "put_coi": 1859585.0,
+          "call_vol": 5412095,
+          "put_vol": 57026190,
+          "strike_skew": 0.9355,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25600.0,
+          "call_oi": 1119040.0,
+          "put_oi": 4997785.0,
+          "call_coi": 106990.0,
+          "put_coi": 3366870.0,
+          "call_vol": 33124650,
+          "put_vol": 105062165,
+          "strike_skew": 0.9384,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25650.0,
+          "call_oi": 603135.0,
+          "put_oi": 3040895.0,
+          "call_coi": 353925.0,
+          "put_coi": 2287935.0,
+          "call_vol": 31347875,
+          "put_vol": 78885105,
+          "strike_skew": 0.7321,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25700.0,
+          "call_oi": 3634410.0,
+          "put_oi": 8185905.0,
+          "call_coi": 1058005.0,
+          "put_coi": 5109910.0,
+          "call_vol": 151869900,
+          "put_vol": 208371995,
+          "strike_skew": 0.6569,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25750.0,
+          "call_oi": 3038100.0,
+          "put_oi": 4314180.0,
+          "call_coi": 1871480.0,
+          "put_coi": 3390855.0,
+          "call_vol": 154379745,
+          "put_vol": 148536505,
+          "strike_skew": 0.2887,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25800.0,
+          "call_oi": 8730085.0,
+          "put_oi": 7837700.0,
+          "call_coi": 3448120.0,
+          "put_coi": 4035785.0,
+          "call_vol": 220772500,
+          "put_vol": 170011075,
+          "strike_skew": 0.0785,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25850.0,
+          "call_oi": 2820090.0,
+          "put_oi": 1456715.0,
+          "call_coi": 936715.0,
+          "put_coi": 915395.0,
+          "call_vol": 87431110,
+          "put_vol": 33993440,
+          "strike_skew": -0.0115,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25900.0,
+          "call_oi": 4289545.0,
+          "put_oi": 1375985.0,
+          "call_coi": 1686815.0,
+          "put_coi": 660790.0,
+          "call_vol": 106746640,
+          "put_vol": 31449340,
+          "strike_skew": -0.4371,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 25950.0,
+          "call_oi": 2017795.0,
+          "put_oi": 393380.0,
+          "call_coi": 1365780.0,
+          "put_coi": 270010.0,
+          "call_vol": 60384220,
+          "put_vol": 5935475,
+          "strike_skew": -0.6699,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 26000.0,
+          "call_oi": 10499190.0,
+          "put_oi": 2022215.0,
+          "call_coi": 2697890.0,
+          "put_coi": 171470.0,
+          "call_vol": 147783480,
+          "put_vol": 19749210,
+          "strike_skew": -0.8805,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 26050.0,
+          "call_oi": 1752140.0,
+          "put_oi": 149630.0,
+          "call_coi": 1051960.0,
+          "put_coi": 85475.0,
+          "call_vol": 42227315,
+          "put_vol": 1422850,
+          "strike_skew": -0.8497,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 26100.0,
+          "call_oi": 5031195.0,
+          "put_oi": 393705.0,
+          "call_coi": 2909855.0,
+          "put_coi": 34970.0,
+          "call_vol": 61442550,
+          "put_vol": 1932580,
+          "strike_skew": -0.9762,
+          "strike_signal": "STRONG_SELL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198737.8482199,
+    "received_at_iso": "2026-02-04T15:22:17.848560",
+    "event_type": "option_chain_update",
+    "event_id": "2e5f74b5-e337-403e-93b5-0a7c8e4e7c5c",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:52:17.728297+00:00",
+      "event_id": "2e5f74b5-e337-403e-93b5-0a7c8e4e7c5c",
+      "symbol": "nifty",
+      "mode": "positional",
+      "expiry": "2026-02-17",
+      "underlying": 25762.15,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 25200.0,
+          "call_oi": 157235.0,
+          "put_oi": 294190.0,
+          "call_coi": 11115.0,
+          "put_coi": 53820.0,
+          "call_vol": 43485,
+          "put_vol": 296140,
+          "strike_skew": 0.6577,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25250.0,
+          "call_oi": 14170.0,
+          "put_oi": 58565.0,
+          "call_coi": 2405.0,
+          "put_coi": 26715.0,
+          "call_vol": 10465,
+          "put_vol": 218335,
+          "strike_skew": 0.8348,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25300.0,
+          "call_oi": 102830.0,
+          "put_oi": 330460.0,
+          "call_coi": -15600.0,
+          "put_coi": 95615.0,
+          "call_vol": 93340,
+          "put_vol": 791830,
+          "strike_skew": 1.3899,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25350.0,
+          "call_oi": 19045.0,
+          "put_oi": 114205.0,
+          "call_coi": 8125.0,
+          "put_coi": 69550.0,
+          "call_vol": 36075,
+          "put_vol": 368615,
+          "strike_skew": 0.7908,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25400.0,
+          "call_oi": 219050.0,
+          "put_oi": 359645.0,
+          "call_coi": -6435.0,
+          "put_coi": 120120.0,
+          "call_vol": 135785,
+          "put_vol": 1071720,
+          "strike_skew": 1.1132,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25450.0,
+          "call_oi": 27040.0,
+          "put_oi": 130520.0,
+          "call_coi": 18265.0,
+          "put_coi": 100555.0,
+          "call_vol": 38350,
+          "put_vol": 340860,
+          "strike_skew": 0.6926,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25500.0,
+          "call_oi": 348790.0,
+          "put_oi": 526370.0,
+          "call_coi": 11960.0,
+          "put_coi": 116415.0,
+          "call_vol": 478985,
+          "put_vol": 1747785,
+          "strike_skew": 0.8137,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25550.0,
+          "call_oi": 41340.0,
+          "put_oi": 88335.0,
+          "call_coi": 845.0,
+          "put_coi": 64155.0,
+          "call_vol": 104065,
+          "put_vol": 352105,
+          "strike_skew": 0.974,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25600.0,
+          "call_oi": 104975.0,
+          "put_oi": 285415.0,
+          "call_coi": 2080.0,
+          "put_coi": 142935.0,
+          "call_vol": 465790,
+          "put_vol": 1130805,
+          "strike_skew": 0.9713,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25650.0,
+          "call_oi": 42965.0,
+          "put_oi": 76440.0,
+          "call_coi": 23595.0,
+          "put_coi": 59800.0,
+          "call_vol": 248560,
+          "put_vol": 401245,
+          "strike_skew": 0.4341,
+          "strike_signal": "BUY"
+        },
+        {
+          "strike": 25700.0,
+          "call_oi": 333385.0,
+          "put_oi": 429845.0,
+          "call_coi": 87035.0,
+          "put_coi": 214695.0,
+          "call_vol": 1609855,
+          "put_vol": 1956955,
+          "strike_skew": 0.4231,
+          "strike_signal": "BUY"
+        },
+        {
+          "strike": 25750.0,
+          "call_oi": 154895.0,
+          "put_oi": 196950.0,
+          "call_coi": 76245.0,
+          "put_coi": 116090.0,
+          "call_vol": 1044225,
+          "put_vol": 1029275,
+          "strike_skew": 0.2072,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25800.0,
+          "call_oi": 805870.0,
+          "put_oi": 717275.0,
+          "call_coi": 345215.0,
+          "put_coi": 297180.0,
+          "call_vol": 2778035,
+          "put_vol": 2623920,
+          "strike_skew": -0.0748,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25850.0,
+          "call_oi": 211120.0,
+          "put_oi": 94705.0,
+          "call_coi": 99385.0,
+          "put_coi": 56030.0,
+          "call_vol": 749125,
+          "put_vol": 346905,
+          "strike_skew": -0.279,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25900.0,
+          "call_oi": 343590.0,
+          "put_oi": 179920.0,
+          "call_coi": 97955.0,
+          "put_coi": 58825.0,
+          "call_vol": 1242605,
+          "put_vol": 531700,
+          "strike_skew": -0.2496,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25950.0,
+          "call_oi": 165815.0,
+          "put_oi": 54275.0,
+          "call_coi": 125515.0,
+          "put_coi": 34840.0,
+          "call_vol": 642785,
+          "put_vol": 120510,
+          "strike_skew": -0.5655,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 26000.0,
+          "call_oi": 1646385.0,
+          "put_oi": 249990.0,
+          "call_coi": 66040.0,
+          "put_coi": 99645.0,
+          "call_vol": 3180970,
+          "put_vol": 610805,
+          "strike_skew": 0.2028,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 26050.0,
+          "call_oi": 137345.0,
+          "put_oi": 45955.0,
+          "call_coi": 90220.0,
+          "put_coi": 29185.0,
+          "call_vol": 734305,
+          "put_vol": 62530,
+          "strike_skew": -0.5112,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 26100.0,
+          "call_oi": 370630.0,
+          "put_oi": 46280.0,
+          "call_coi": 24960.0,
+          "put_coi": 22425.0,
+          "call_vol": 1283620,
+          "put_vol": 71305,
+          "strike_skew": -0.0535,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 26150.0,
+          "call_oi": 96200.0,
+          "put_oi": 44850.0,
+          "call_coi": 70005.0,
+          "put_coi": 26585.0,
+          "call_vol": 368875,
+          "put_vol": 35880,
+          "strike_skew": -0.4495,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 26200.0,
+          "call_oi": 378495.0,
+          "put_oi": 41860.0,
+          "call_coi": 64220.0,
+          "put_coi": 18005.0,
+          "call_vol": 1509885,
+          "put_vol": 62660,
+          "strike_skew": -0.5621,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 26250.0,
+          "call_oi": 150085.0,
+          "put_oi": 5460.0,
+          "call_coi": 115765.0,
+          "put_coi": 5330.0,
+          "call_vol": 425230,
+          "put_vol": 9490,
+          "strike_skew": -0.912,
+          "strike_signal": "STRONG_SELL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198741.317487,
+    "received_at_iso": "2026-02-04T15:22:21.317852",
+    "event_type": "option_chain_update",
+    "event_id": "0ad03973-1a69-43b5-be7c-5ae8ca3ad890",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:52:20.885134+00:00",
+      "event_id": "0ad03973-1a69-43b5-be7c-5ae8ca3ad890",
+      "symbol": "banknifty",
+      "mode": "current",
+      "expiry": "2026-02-24",
+      "underlying": 60219.4,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 59200.0,
+          "call_oi": 52170.0,
+          "put_oi": 78120.0,
+          "call_coi": -56610.0,
+          "put_coi": -37800.0,
+          "call_vol": 21720,
+          "put_vol": 247080,
+          "strike_skew": -0.1992,
+          "strike_signal": "NEUTRAL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198744.524788,
+    "received_at_iso": "2026-02-04T15:22:24.524807",
+    "event_type": "option_chain_update",
+    "event_id": "3857a612-82bf-421d-b9e7-ebed18654523",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:52:24.517780+00:00",
+      "event_id": "3857a612-82bf-421d-b9e7-ebed18654523",
+      "symbol": "banknifty",
+      "mode": "positional",
+      "expiry": "2026-03-30",
+      "underlying": 60219.4,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 59200.0,
+          "call_oi": 2190.0,
+          "put_oi": 5910.0,
+          "call_coi": 360.0,
+          "put_coi": 2340.0,
+          "call_vol": 660,
+          "put_vol": 5700,
+          "strike_skew": 0.7333,
+          "strike_signal": "STRONG_BUY"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198748.316224,
+    "received_at_iso": "2026-02-04T15:22:28.316454",
+    "event_type": "option_chain_update",
+    "event_id": "20e9e4ed-7b3c-4465-a3d6-8dfacf7caf28",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:52:28.308248+00:00",
+      "event_id": "20e9e4ed-7b3c-4465-a3d6-8dfacf7caf28",
+      "symbol": "sensex",
+      "mode": "current",
+      "expiry": "",
+      "underlying": 83783.27,
+      "is_incremental": false,
+      "strikes": []
+    }
+  },
+  {
+    "received_at": 1770198749.200324,
+    "received_at_iso": "2026-02-04T15:22:29.200387",
+    "event_type": "indicator_update",
+    "event_id": "3a60bf47-17b4-443d-9488-f4ff4658a4ea",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:52:28.787589+00:00",
+      "event_id": "3a60bf47-17b4-443d-9488-f4ff4658a4ea",
+      "symbol": "nifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.302,
+        "raw_skew": 0.302,
+        "pcr": 1.195,
+        "adr": "3.17",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 55.32,
+        "ema_5": 25784.63,
+        "ema_9": 25787.63,
+        "ema_13": 25787.14,
+        "ema_21": 25782.15,
+        "ema_50": 25767.74,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 52214370.0,
+        "skew_activity_abs_coi": 52214370.0,
+        "pcr_put_oi_sum": 57941845.0,
+        "pcr_call_oi_sum": 48486035.0,
+        "put_coi_sum": 33990710.0,
+        "call_coi_sum": 18223660.0
+      },
+      "intuition_text": "The current market bias appears bearish, as indicated by the high Put-Call Ratio (PCR) and the significant Call Open Interest (COI) compared to Put COI. The Advance/Decline Ratio (ADR) suggests a strong negative sentiment, with more declining stocks than advancing ones. Traders might consider looking at protective Put options to hedge against potential downturns, given the prevailing bearish indicators."
+    }
+  },
+  {
+    "received_at": 1770198749.200829,
+    "received_at_iso": "2026-02-04T15:22:29.200854",
+    "event_type": "indicator_update",
+    "event_id": "69f3a4cb-135f-4b9d-8cbf-05ffb3fc1abd",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:52:28.787687+00:00",
+      "event_id": "69f3a4cb-135f-4b9d-8cbf-05ffb3fc1abd",
+      "symbol": "nifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.1834,
+        "raw_skew": 0.1834,
+        "pcr": 0.7548,
+        "adr": "3.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 1.0,
+        "rsi": 55.32,
+        "ema_5": 25784.63,
+        "ema_9": 25787.63,
+        "ema_13": 25787.14,
+        "ema_21": 25782.15,
+        "ema_50": 25767.74,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 3150355.0,
+        "skew_activity_abs_coi": 3150355.0,
+        "pcr_put_oi_sum": 4407130.0,
+        "pcr_call_oi_sum": 5838560.0,
+        "put_coi_sum": 1864135.0,
+        "call_coi_sum": 1286220.0
+      },
+      "intuition_text": "The current market bias appears neutral, as indicated by the skew of 0.1834 and a PCR of 0.7548, suggesting a lack of strong conviction in either direction. The strong ADR of 3.17 indicates more advancing stocks than declining ones, which could signal underlying bullish sentiment; however, the higher put COI compared to call COI suggests some caution among traders. In this context, it may be prudent to consider looking at straddles or strangles to capitalize on potential volatility, while waiting for clearer directional signals."
+    }
+  },
+  {
+    "received_at": 1770198749.200961,
+    "received_at_iso": "2026-02-04T15:22:29.200981",
+    "event_type": "indicator_update",
+    "event_id": "f092dc70-ebb7-404d-a87d-393bfd12bdd6",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:52:28.787843+00:00",
+      "event_id": "f092dc70-ebb7-404d-a87d-393bfd12bdd6",
+      "symbol": "banknifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.397,
+        "raw_skew": 0.397,
+        "pcr": 1.479,
+        "adr": "2.25",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": -4179930.0,
+        "skew_activity_abs_coi": 4179930.0,
+        "pcr_put_oi_sum": 77160.0,
+        "pcr_call_oi_sum": 52170.0,
+        "put_coi_sum": -2919660.0,
+        "call_coi_sum": -1260270.0
+      },
+      "intuition_text": "The current market bias for Bank Nifty appears bearish, indicated by a higher Put-Call Ratio (PCR) and a negative Call Change in Open Interest (COI). The Advance/Decline Ratio (ADR) suggests that while some stocks are advancing, the overall sentiment may be skewed towards protective positioning with significant Put COI increase. Traders might consider looking at protective options strategies, such as buying Puts, as market sentiment leans towards caution."
+    }
+  },
+  {
+    "received_at": 1770198749.239511,
+    "received_at_iso": "2026-02-04T15:22:29.239826",
+    "event_type": "indicator_update",
+    "event_id": "8a651a02-58f9-4269-bbbb-8907bd6cc785",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:52:28.787934+00:00",
+      "event_id": "8a651a02-58f9-4269-bbbb-8907bd6cc785",
+      "symbol": "banknifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.7363,
+        "raw_skew": 0.7363,
+        "pcr": 2.7123,
+        "adr": "2.25",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": 2730.0,
+        "skew_activity_abs_coi": 2730.0,
+        "pcr_put_oi_sum": 5940.0,
+        "pcr_call_oi_sum": 2190.0,
+        "put_coi_sum": 2370.0,
+        "call_coi_sum": 360.0
+      },
+      "intuition_text": "The current market bias appears bullish, indicated by a high Put-Call Ratio (PCR) of 2.7123, suggesting strong bearish sentiment among options traders. The Advance/Decline Ratio (ADR) of 2.25 reinforces this bullish stance, with more stocks advancing than declining. Traders might consider looking at call options (CE) for potential gains, as the skew also suggests a preference for upside exposure."
+    }
+  },
+  {
+    "received_at": 1770198749.240293,
+    "received_at_iso": "2026-02-04T15:22:29.240600",
+    "event_type": "indicator_update",
+    "event_id": "6fa8990e-16b6-433a-90d9-6084b9cd427a",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:52:28.787955+00:00",
+      "event_id": "6fa8990e-16b6-433a-90d9-6084b9cd427a",
+      "symbol": "sensex",
+      "mode": "current",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "3.29",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": null,
+        "skew_activity_abs_coi": null,
+        "pcr_put_oi_sum": null,
+        "pcr_call_oi_sum": null,
+        "put_coi_sum": null,
+        "call_coi_sum": null
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a robust Advance/Decline Ratio of 3.29, indicating strong upward momentum among stocks. This suggests a favorable environment for potential bullish strategies, such as considering call options (CE), if market conditions remain stable. Traders may want to monitor for any shifts in market sentiment that could impact this bullish outlook."
+    }
+  },
+  {
+    "received_at": 1770198749.240787,
+    "received_at_iso": "2026-02-04T15:22:29.240836",
+    "event_type": "indicator_update",
+    "event_id": "40fe0f9e-cde6-45d5-8cad-f5e09dc5d7ff",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:52:28.787977+00:00",
+      "event_id": "40fe0f9e-cde6-45d5-8cad-f5e09dc5d7ff",
+      "symbol": "sensex",
+      "mode": "positional",
+      "indicators": {
+        "skew": -1.914,
+        "raw_skew": -1.914,
+        "pcr": 1.7698,
+        "adr": "3.29",
+        "signal": "STRONG_SELL",
+        "skew_confidence": 0.5225,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": -28360.0,
+        "skew_activity_abs_coi": 54280.0,
+        "pcr_put_oi_sum": 214000.0,
+        "pcr_call_oi_sum": 120920.0,
+        "put_coi_sum": 12960.0,
+        "call_coi_sum": -41320.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a high Advance/Decline Ratio of 3.29 and a Put-Call Ratio of 1.7698, indicating strong bullish sentiment among traders. The negative skew of -1.9140 suggests a relatively high demand for puts, which could indicate some hedging against potential downside. Given these conditions, consider looking at call options for potential upside exposure while staying aware of the hedging sentiment."
+    }
+  },
+  {
+    "received_at": 1770198749.24101,
+    "received_at_iso": "2026-02-04T15:22:29.241027",
+    "event_type": "indicator_update",
+    "event_id": "f4e66b8f-2862-49b4-850b-f440bb871f9d",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:52:28.787997+00:00",
+      "event_id": "f4e66b8f-2862-49b4-850b-f440bb871f9d",
+      "symbol": "finnifty",
+      "mode": "current",
+      "indicators": {
+        "skew": -0.3879,
+        "raw_skew": -0.3879,
+        "pcr": 1.015,
+        "adr": "2.17",
+        "signal": "SELL",
+        "skew_confidence": 1.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": -377220.0,
+        "skew_activity_abs_coi": 377220.0,
+        "pcr_put_oi_sum": 207600.0,
+        "pcr_call_oi_sum": 204540.0,
+        "put_coi_sum": -115440.0,
+        "call_coi_sum": -261780.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a high Advance/Decline Ratio of 2.17, indicating stronger upward momentum among stocks. However, the negative skew and a Put-Call Ratio slightly above 1 suggest some caution, as there is a higher demand for puts than calls. Traders might consider looking at call options (CE) for exposure while remaining mindful of potential market corrections."
+    }
+  },
+  {
+    "received_at": 1770198749.241467,
+    "received_at_iso": "2026-02-04T15:22:29.241501",
+    "event_type": "indicator_update",
+    "event_id": "bd4ff118-c1cb-4b95-8b32-3c778d54a329",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:52:28.788017+00:00",
+      "event_id": "bd4ff118-c1cb-4b95-8b32-3c778d54a329",
+      "symbol": "finnifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "2.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": 0.0,
+        "skew_activity_abs_coi": 0.0,
+        "pcr_put_oi_sum": 0.0,
+        "pcr_call_oi_sum": 0.0,
+        "put_coi_sum": 0.0,
+        "call_coi_sum": 0.0
+      },
+      "intuition_text": "We don't recommend trading next month's options for FINNIFTY"
+    }
+  },
+  {
+    "received_at": 1770198751.563193,
+    "received_at_iso": "2026-02-04T15:22:31.563233",
+    "event_type": "option_chain_update",
+    "event_id": "952573c2-93cf-4fa3-87f7-c7ab0fa15a0a",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:52:31.557263+00:00",
+      "event_id": "952573c2-93cf-4fa3-87f7-c7ab0fa15a0a",
+      "symbol": "sensex",
+      "mode": "positional",
+      "expiry": "",
+      "underlying": 83781.23,
+      "is_incremental": false,
+      "strikes": []
+    }
+  },
+  {
+    "received_at": 1770198754.420733,
+    "received_at_iso": "2026-02-04T15:22:34.420858",
+    "event_type": "option_chain_update",
+    "event_id": "f658100e-7108-4ade-8483-e918372130db",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:52:34.239484+00:00",
+      "event_id": "f658100e-7108-4ade-8483-e918372130db",
+      "symbol": "finnifty",
+      "mode": "current",
+      "expiry": "2026-02-24",
+      "underlying": 27785.4,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 27550.0,
+          "call_oi": 3540.0,
+          "put_oi": 8220.0,
+          "call_coi": -3540.0,
+          "put_coi": -10260.0,
+          "call_vol": 960,
+          "put_vol": 21420,
+          "strike_skew": 0.487,
+          "strike_signal": "BUY"
+        },
+        {
+          "strike": 27600.0,
+          "call_oi": 11220.0,
+          "put_oi": 37440.0,
+          "call_coi": -9420.0,
+          "put_coi": 11640.0,
+          "call_vol": 14820,
+          "put_vol": 75360,
+          "strike_skew": 9.4865,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 27650.0,
+          "call_oi": 8100.0,
+          "put_oi": 4200.0,
+          "call_coi": -8820.0,
+          "put_coi": -4320.0,
+          "call_vol": 5160,
+          "put_vol": 14520,
+          "strike_skew": -0.3425,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 27700.0,
+          "call_oi": 38220.0,
+          "put_oi": 24600.0,
+          "call_coi": -64260.0,
+          "put_coi": -36600.0,
+          "call_vol": 77880,
+          "put_vol": 75600,
+          "strike_skew": -0.2742,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 27750.0,
+          "call_oi": 8760.0,
+          "put_oi": 8940.0,
+          "call_coi": -15960.0,
+          "put_coi": -1020.0,
+          "call_vol": 33840,
+          "put_vol": 44220,
+          "strike_skew": -0.8799,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 27800.0,
+          "call_oi": 21240.0,
+          "put_oi": 21840.0,
+          "call_coi": -32160.0,
+          "put_coi": -2880.0,
+          "call_vol": 148380,
+          "put_vol": 135240,
+          "strike_skew": -0.8356,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 27850.0,
+          "call_oi": 5880.0,
+          "put_oi": 2700.0,
+          "call_coi": 2520.0,
+          "put_coi": -180.0,
+          "call_vol": 29940,
+          "put_vol": 15000,
+          "strike_skew": -1.1538,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 27900.0,
+          "call_oi": 10740.0,
+          "put_oi": 7740.0,
+          "call_coi": -7020.0,
+          "put_coi": 420.0,
+          "call_vol": 48660,
+          "put_vol": 23100,
+          "strike_skew": -1.1273,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 27950.0,
+          "call_oi": 1680.0,
+          "put_oi": 840.0,
+          "call_coi": -2880.0,
+          "put_coi": -360.0,
+          "call_vol": 4080,
+          "put_vol": 960,
+          "strike_skew": -0.7778,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 28000.0,
+          "call_oi": 50880.0,
+          "put_oi": 8640.0,
+          "call_coi": -18480.0,
+          "put_coi": 3180.0,
+          "call_vol": 105960,
+          "put_vol": 27720,
+          "strike_skew": -1.4157,
+          "strike_signal": "STRONG_SELL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198754.540239,
+    "received_at_iso": "2026-02-04T15:22:34.540287",
+    "event_type": "option_chain_update",
+    "event_id": "b2100eca-3a82-46bc-acaa-80d5546088dd",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:52:34.534599+00:00",
+      "event_id": "b2100eca-3a82-46bc-acaa-80d5546088dd",
+      "symbol": "finnifty",
+      "mode": "positional",
+      "expiry": "2026-03-30",
+      "underlying": 27785.4,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 27600.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 27700.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 27800.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 27900.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 28000.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198784.6330009,
+    "received_at_iso": "2026-02-04T15:23:04.633224",
+    "event_type": "heartbeat",
+    "event_id": "7273b531-c478-4049-97ff-4b031882e256",
+    "data": {
+      "event_type": "heartbeat",
+      "timestamp": "2026-02-04T09:53:04.537299+00:00",
+      "event_id": "7273b531-c478-4049-97ff-4b031882e256",
+      "sequence": 40
+    }
+  },
+  {
+    "received_at": 1770198808.903934,
+    "received_at_iso": "2026-02-04T15:23:28.904125",
+    "event_type": "indicator_update",
+    "event_id": "c1040144-ca7c-48d7-bca0-b10230f3a7b4",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:53:28.789792+00:00",
+      "event_id": "c1040144-ca7c-48d7-bca0-b10230f3a7b4",
+      "symbol": "nifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.302,
+        "raw_skew": 0.302,
+        "pcr": 1.195,
+        "adr": "3.17",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 55.32,
+        "ema_5": 25784.63,
+        "ema_9": 25787.63,
+        "ema_13": 25787.14,
+        "ema_21": 25782.15,
+        "ema_50": 25767.74,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 52214370.0,
+        "skew_activity_abs_coi": 52214370.0,
+        "pcr_put_oi_sum": 57941845.0,
+        "pcr_call_oi_sum": 48486035.0,
+        "put_coi_sum": 33990710.0,
+        "call_coi_sum": 18223660.0
+      },
+      "intuition_text": "The current market bias appears bearish, as indicated by the high Put-Call Ratio (PCR) and the significant Call Open Interest (COI) compared to Put COI. The Advance/Decline Ratio (ADR) suggests a strong negative sentiment, with more declining stocks than advancing ones. Traders might consider looking at protective Put options to hedge against potential downturns, given the prevailing bearish indicators."
+    }
+  },
+  {
+    "received_at": 1770198808.90445,
+    "received_at_iso": "2026-02-04T15:23:28.904459",
+    "event_type": "indicator_update",
+    "event_id": "986453b9-055a-4c1c-b09b-c747826668ae",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:53:28.789872+00:00",
+      "event_id": "986453b9-055a-4c1c-b09b-c747826668ae",
+      "symbol": "nifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.1834,
+        "raw_skew": 0.1834,
+        "pcr": 0.7548,
+        "adr": "3.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 1.0,
+        "rsi": 55.32,
+        "ema_5": 25784.63,
+        "ema_9": 25787.63,
+        "ema_13": 25787.14,
+        "ema_21": 25782.15,
+        "ema_50": 25767.74,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 3150355.0,
+        "skew_activity_abs_coi": 3150355.0,
+        "pcr_put_oi_sum": 4407130.0,
+        "pcr_call_oi_sum": 5838560.0,
+        "put_coi_sum": 1864135.0,
+        "call_coi_sum": 1286220.0
+      },
+      "intuition_text": "The current market bias appears neutral, as indicated by the skew of 0.1834 and a PCR of 0.7548, suggesting a lack of strong conviction in either direction. The strong ADR of 3.17 indicates more advancing stocks than declining ones, which could signal underlying bullish sentiment; however, the higher put COI compared to call COI suggests some caution among traders. In this context, it may be prudent to consider looking at straddles or strangles to capitalize on potential volatility, while waiting for clearer directional signals."
+    }
+  },
+  {
+    "received_at": 1770198808.9044921,
+    "received_at_iso": "2026-02-04T15:23:28.904500",
+    "event_type": "indicator_update",
+    "event_id": "9874997c-c53e-450b-89b4-9f2f89f8774c",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:53:28.789936+00:00",
+      "event_id": "9874997c-c53e-450b-89b4-9f2f89f8774c",
+      "symbol": "banknifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.397,
+        "raw_skew": 0.397,
+        "pcr": 1.479,
+        "adr": "2.25",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": -4179930.0,
+        "skew_activity_abs_coi": 4179930.0,
+        "pcr_put_oi_sum": 77160.0,
+        "pcr_call_oi_sum": 52170.0,
+        "put_coi_sum": -2919660.0,
+        "call_coi_sum": -1260270.0
+      },
+      "intuition_text": "The current market bias for Bank Nifty appears bearish, indicated by a higher Put-Call Ratio (PCR) and a negative Call Change in Open Interest (COI). The Advance/Decline Ratio (ADR) suggests that while some stocks are advancing, the overall sentiment may be skewed towards protective positioning with significant Put COI increase. Traders might consider looking at protective options strategies, such as buying Puts, as market sentiment leans towards caution."
+    }
+  },
+  {
+    "received_at": 1770198808.9045272,
+    "received_at_iso": "2026-02-04T15:23:28.904541",
+    "event_type": "indicator_update",
+    "event_id": "b7d85be4-7eca-458e-b3f7-462d1e98abdb",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:53:28.789991+00:00",
+      "event_id": "b7d85be4-7eca-458e-b3f7-462d1e98abdb",
+      "symbol": "banknifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.7363,
+        "raw_skew": 0.7363,
+        "pcr": 2.7123,
+        "adr": "2.25",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": 2730.0,
+        "skew_activity_abs_coi": 2730.0,
+        "pcr_put_oi_sum": 5940.0,
+        "pcr_call_oi_sum": 2190.0,
+        "put_coi_sum": 2370.0,
+        "call_coi_sum": 360.0
+      },
+      "intuition_text": "The current market bias appears bullish, indicated by a high Put-Call Ratio (PCR) of 2.7123, suggesting strong bearish sentiment among options traders. The Advance/Decline Ratio (ADR) of 2.25 reinforces this bullish stance, with more stocks advancing than declining. Traders might consider looking at call options (CE) for potential gains, as the skew also suggests a preference for upside exposure."
+    }
+  },
+  {
+    "received_at": 1770198808.904599,
+    "received_at_iso": "2026-02-04T15:23:28.904610",
+    "event_type": "indicator_update",
+    "event_id": "fa0dffcc-ea29-4692-95f0-686f5bd3e00a",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:53:28.790011+00:00",
+      "event_id": "fa0dffcc-ea29-4692-95f0-686f5bd3e00a",
+      "symbol": "sensex",
+      "mode": "current",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "3.29",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": null,
+        "skew_activity_abs_coi": null,
+        "pcr_put_oi_sum": null,
+        "pcr_call_oi_sum": null,
+        "put_coi_sum": null,
+        "call_coi_sum": null
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a robust Advance/Decline Ratio of 3.29, indicating strong upward momentum among stocks. This suggests a favorable environment for potential bullish strategies, such as considering call options (CE), if market conditions remain stable. Traders may want to monitor for any shifts in market sentiment that could impact this bullish outlook."
+    }
+  },
+  {
+    "received_at": 1770198808.904693,
+    "received_at_iso": "2026-02-04T15:23:28.904746",
+    "event_type": "indicator_update",
+    "event_id": "4db857b3-bc1f-4471-a9fc-1f277c8bc510",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:53:28.790032+00:00",
+      "event_id": "4db857b3-bc1f-4471-a9fc-1f277c8bc510",
+      "symbol": "sensex",
+      "mode": "positional",
+      "indicators": {
+        "skew": -1.914,
+        "raw_skew": -1.914,
+        "pcr": 1.7698,
+        "adr": "3.29",
+        "signal": "STRONG_SELL",
+        "skew_confidence": 0.5225,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": -28360.0,
+        "skew_activity_abs_coi": 54280.0,
+        "pcr_put_oi_sum": 214000.0,
+        "pcr_call_oi_sum": 120920.0,
+        "put_coi_sum": 12960.0,
+        "call_coi_sum": -41320.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a strong Advance/Decline Ratio of 3.29 and a high Put-Call Ratio of 1.7698, indicating potential upward momentum. However, the negative skew (-1.9140) suggests some caution as it reflects a preference for downside protection among traders. Given these conditions, consider looking at call options (CE) as a potential strategy to capitalize on the bullish sentiment while remaining aware of the skew's implications."
+    }
+  },
+  {
+    "received_at": 1770198808.904811,
+    "received_at_iso": "2026-02-04T15:23:28.904819",
+    "event_type": "indicator_update",
+    "event_id": "3b371e53-6be1-4e4d-aaa2-bbe4a1a10cfc",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:53:28.790052+00:00",
+      "event_id": "3b371e53-6be1-4e4d-aaa2-bbe4a1a10cfc",
+      "symbol": "finnifty",
+      "mode": "current",
+      "indicators": {
+        "skew": -0.3879,
+        "raw_skew": -0.3879,
+        "pcr": 1.015,
+        "adr": "2.17",
+        "signal": "SELL",
+        "skew_confidence": 1.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": -377220.0,
+        "skew_activity_abs_coi": 377220.0,
+        "pcr_put_oi_sum": 207600.0,
+        "pcr_call_oi_sum": 204540.0,
+        "put_coi_sum": -115440.0,
+        "call_coi_sum": -261780.0
+      },
+      "intuition_text": "The current market bias for Finnifty appears bullish, supported by a positive Advance/Decline Ratio of 2.17, indicating strong market breadth. However, the Put-Call Ratio just above 1 suggests a slight caution as more puts are being purchased relative to calls. Traders might consider looking at call options (CE) for potential upside while remaining aware of the elevated put activity."
+    }
+  },
+  {
+    "received_at": 1770198808.904935,
+    "received_at_iso": "2026-02-04T15:23:28.904948",
+    "event_type": "indicator_update",
+    "event_id": "46f2272a-2074-45b3-8bec-d3e2fca2dda9",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:53:28.790070+00:00",
+      "event_id": "46f2272a-2074-45b3-8bec-d3e2fca2dda9",
+      "symbol": "finnifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "2.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": 0.0,
+        "skew_activity_abs_coi": 0.0,
+        "pcr_put_oi_sum": 0.0,
+        "pcr_call_oi_sum": 0.0,
+        "put_coi_sum": 0.0,
+        "call_coi_sum": 0.0
+      },
+      "intuition_text": "We don't recommend trading next month's options for FINNIFTY"
+    }
+  },
+  {
+    "received_at": 1770198838.907417,
+    "received_at_iso": "2026-02-04T15:23:58.907443",
+    "event_type": "heartbeat",
+    "event_id": "44d43348-5f2b-43e0-8ace-405316ac23e3",
+    "data": {
+      "event_type": "heartbeat",
+      "timestamp": "2026-02-04T09:53:58.797173+00:00",
+      "event_id": "44d43348-5f2b-43e0-8ace-405316ac23e3",
+      "sequence": 48
+    }
+  },
+  {
+    "received_at": 1770198868.801623,
+    "received_at_iso": "2026-02-04T15:24:28.801678",
+    "event_type": "indicator_update",
+    "event_id": "8ad5bc38-e7ec-4795-a8e5-d015cc0e4b8e",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:54:28.791118+00:00",
+      "event_id": "8ad5bc38-e7ec-4795-a8e5-d015cc0e4b8e",
+      "symbol": "nifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.302,
+        "raw_skew": 0.302,
+        "pcr": 1.195,
+        "adr": "3.17",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 55.32,
+        "ema_5": 25784.63,
+        "ema_9": 25787.63,
+        "ema_13": 25787.14,
+        "ema_21": 25782.15,
+        "ema_50": 25767.74,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 52214370.0,
+        "skew_activity_abs_coi": 52214370.0,
+        "pcr_put_oi_sum": 57941845.0,
+        "pcr_call_oi_sum": 48486035.0,
+        "put_coi_sum": 33990710.0,
+        "call_coi_sum": 18223660.0
+      },
+      "intuition_text": "The current market bias appears bearish, as indicated by the high Put-Call Ratio (PCR) and the significant Call Open Interest (COI) compared to Put COI. The Advance/Decline Ratio (ADR) suggests a strong negative sentiment, with more declining stocks than advancing ones. Traders might consider looking at protective Put options to hedge against potential downturns, given the prevailing bearish indicators."
+    }
+  },
+  {
+    "received_at": 1770198868.8033469,
+    "received_at_iso": "2026-02-04T15:24:28.803440",
+    "event_type": "indicator_update",
+    "event_id": "90e5f3d4-f371-4a7c-af76-d6a1fc4d07ec",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:54:28.791202+00:00",
+      "event_id": "90e5f3d4-f371-4a7c-af76-d6a1fc4d07ec",
+      "symbol": "nifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.1834,
+        "raw_skew": 0.1834,
+        "pcr": 0.7548,
+        "adr": "3.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 1.0,
+        "rsi": 55.32,
+        "ema_5": 25784.63,
+        "ema_9": 25787.63,
+        "ema_13": 25787.14,
+        "ema_21": 25782.15,
+        "ema_50": 25767.74,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 3150355.0,
+        "skew_activity_abs_coi": 3150355.0,
+        "pcr_put_oi_sum": 4407130.0,
+        "pcr_call_oi_sum": 5838560.0,
+        "put_coi_sum": 1864135.0,
+        "call_coi_sum": 1286220.0
+      },
+      "intuition_text": "The current market bias appears neutral, as indicated by the skew of 0.1834 and a PCR of 0.7548, suggesting a lack of strong conviction in either direction. The strong ADR of 3.17 indicates more advancing stocks than declining ones, which could signal underlying bullish sentiment; however, the higher put COI compared to call COI suggests some caution among traders. In this context, it may be prudent to consider looking at straddles or strangles to capitalize on potential volatility, while waiting for clearer directional signals."
+    }
+  },
+  {
+    "received_at": 1770198868.803735,
+    "received_at_iso": "2026-02-04T15:24:28.803820",
+    "event_type": "indicator_update",
+    "event_id": "eb9819ef-897a-4119-acab-647238265b73",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:54:28.791250+00:00",
+      "event_id": "eb9819ef-897a-4119-acab-647238265b73",
+      "symbol": "banknifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.397,
+        "raw_skew": 0.397,
+        "pcr": 1.479,
+        "adr": "2.25",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": -4179930.0,
+        "skew_activity_abs_coi": 4179930.0,
+        "pcr_put_oi_sum": 77160.0,
+        "pcr_call_oi_sum": 52170.0,
+        "put_coi_sum": -2919660.0,
+        "call_coi_sum": -1260270.0
+      },
+      "intuition_text": "The current market bias for Bank Nifty appears bearish, indicated by a higher Put-Call Ratio (PCR) and a negative Call Change in Open Interest (COI). The Advance/Decline Ratio (ADR) suggests that while some stocks are advancing, the overall sentiment may be skewed towards protective positioning with significant Put COI increase. Traders might consider looking at protective options strategies, such as buying Puts, as market sentiment leans towards caution."
+    }
+  },
+  {
+    "received_at": 1770198868.8070788,
+    "received_at_iso": "2026-02-04T15:24:28.807102",
+    "event_type": "indicator_update",
+    "event_id": "847278a7-e23b-4057-9962-e3fdd6c2773d",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:54:28.791288+00:00",
+      "event_id": "847278a7-e23b-4057-9962-e3fdd6c2773d",
+      "symbol": "banknifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.7363,
+        "raw_skew": 0.7363,
+        "pcr": 2.7123,
+        "adr": "2.25",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": 2730.0,
+        "skew_activity_abs_coi": 2730.0,
+        "pcr_put_oi_sum": 5940.0,
+        "pcr_call_oi_sum": 2190.0,
+        "put_coi_sum": 2370.0,
+        "call_coi_sum": 360.0
+      },
+      "intuition_text": "The current market bias appears bullish, indicated by a high Put-Call Ratio (PCR) of 2.7123, suggesting strong bearish sentiment among options traders. The Advance/Decline Ratio (ADR) of 2.25 reinforces this bullish stance, with more stocks advancing than declining. Traders might consider looking at call options (CE) for potential gains, as the skew also suggests a preference for upside exposure."
+    }
+  },
+  {
+    "received_at": 1770198868.807164,
+    "received_at_iso": "2026-02-04T15:24:28.807171",
+    "event_type": "indicator_update",
+    "event_id": "7bac1492-9d87-49aa-8124-4484b4597f4a",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:54:28.791308+00:00",
+      "event_id": "7bac1492-9d87-49aa-8124-4484b4597f4a",
+      "symbol": "sensex",
+      "mode": "current",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "3.29",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": null,
+        "skew_activity_abs_coi": null,
+        "pcr_put_oi_sum": null,
+        "pcr_call_oi_sum": null,
+        "put_coi_sum": null,
+        "call_coi_sum": null
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a robust Advance/Decline Ratio of 3.29, indicating strong upward momentum among stocks. This suggests a favorable environment for potential bullish strategies, such as considering call options (CE), if market conditions remain stable. Traders may want to monitor for any shifts in market sentiment that could impact this bullish outlook."
+    }
+  },
+  {
+    "received_at": 1770198868.8072,
+    "received_at_iso": "2026-02-04T15:24:28.807208",
+    "event_type": "indicator_update",
+    "event_id": "3229bce3-da62-4af1-bf66-a6eb90f45adb",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:54:28.791328+00:00",
+      "event_id": "3229bce3-da62-4af1-bf66-a6eb90f45adb",
+      "symbol": "sensex",
+      "mode": "positional",
+      "indicators": {
+        "skew": -1.914,
+        "raw_skew": -1.914,
+        "pcr": 1.7698,
+        "adr": "3.29",
+        "signal": "STRONG_SELL",
+        "skew_confidence": 0.5225,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": -28360.0,
+        "skew_activity_abs_coi": 54280.0,
+        "pcr_put_oi_sum": 214000.0,
+        "pcr_call_oi_sum": 120920.0,
+        "put_coi_sum": 12960.0,
+        "call_coi_sum": -41320.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a strong Advance/Decline Ratio of 3.29 and a high Put-Call Ratio of 1.7698, indicating potential upward momentum. However, the negative skew (-1.9140) suggests some caution as it reflects a preference for downside protection among traders. Given these conditions, consider looking at call options (CE) as a potential strategy to capitalize on the bullish sentiment while remaining aware of the skew's implications."
+    }
+  },
+  {
+    "received_at": 1770198868.807233,
+    "received_at_iso": "2026-02-04T15:24:28.807238",
+    "event_type": "indicator_update",
+    "event_id": "27b29954-3469-4834-a20b-a56f26716d5c",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:54:28.791347+00:00",
+      "event_id": "27b29954-3469-4834-a20b-a56f26716d5c",
+      "symbol": "finnifty",
+      "mode": "current",
+      "indicators": {
+        "skew": -0.3879,
+        "raw_skew": -0.3879,
+        "pcr": 1.015,
+        "adr": "2.17",
+        "signal": "SELL",
+        "skew_confidence": 1.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": -377220.0,
+        "skew_activity_abs_coi": 377220.0,
+        "pcr_put_oi_sum": 207600.0,
+        "pcr_call_oi_sum": 204540.0,
+        "put_coi_sum": -115440.0,
+        "call_coi_sum": -261780.0
+      },
+      "intuition_text": "The current market bias for Finnifty appears bullish, supported by a positive Advance/Decline Ratio of 2.17, indicating strong market breadth. However, the Put-Call Ratio just above 1 suggests a slight caution as more puts are being purchased relative to calls. Traders might consider looking at call options (CE) for potential upside while remaining aware of the elevated put activity."
+    }
+  },
+  {
+    "received_at": 1770198868.807404,
+    "received_at_iso": "2026-02-04T15:24:28.807435",
+    "event_type": "indicator_update",
+    "event_id": "97b88f8c-fc67-4b56-bf2e-0ef5f2122252",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:54:28.791366+00:00",
+      "event_id": "97b88f8c-fc67-4b56-bf2e-0ef5f2122252",
+      "symbol": "finnifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "2.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": 0.0,
+        "skew_activity_abs_coi": 0.0,
+        "pcr_put_oi_sum": 0.0,
+        "pcr_call_oi_sum": 0.0,
+        "put_coi_sum": 0.0,
+        "call_coi_sum": 0.0
+      },
+      "intuition_text": "We don't recommend trading next month's options for FINNIFTY"
+    }
+  },
+  {
+    "received_at": 1770198898.812244,
+    "received_at_iso": "2026-02-04T15:24:58.813374",
+    "event_type": "heartbeat",
+    "event_id": "ea2c6f36-b4cf-4315-a550-1838599e5d4d",
+    "data": {
+      "event_type": "heartbeat",
+      "timestamp": "2026-02-04T09:54:58.796298+00:00",
+      "event_id": "ea2c6f36-b4cf-4315-a550-1838599e5d4d",
+      "sequence": 56
+    }
+  },
+  {
+    "received_at": 1770198921.442741,
+    "received_at_iso": "2026-02-04T15:25:21.443999",
+    "event_type": "option_chain_update",
+    "event_id": "97657e2b-f8d8-45ff-9a2a-4a4f8b0c04e4",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:55:21.411074+00:00",
+      "event_id": "97657e2b-f8d8-45ff-9a2a-4a4f8b0c04e4",
+      "symbol": "nifty",
+      "mode": "current",
+      "expiry": "2026-02-10",
+      "underlying": 25760.2,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 25300.0,
+          "call_oi": 828100.0,
+          "put_oi": 3630640.0,
+          "call_coi": -72540.0,
+          "put_coi": 1449630.0,
+          "call_vol": 1130935,
+          "put_vol": 39110500,
+          "strike_skew": 1.1054,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25350.0,
+          "call_oi": 100555.0,
+          "put_oi": 2151890.0,
+          "call_coi": -32305.0,
+          "put_coi": 1623895.0,
+          "call_vol": 349505,
+          "put_vol": 26993330,
+          "strike_skew": 1.0406,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25400.0,
+          "call_oi": 714870.0,
+          "put_oi": 4078165.0,
+          "call_coi": 25870.0,
+          "put_coi": 1913600.0,
+          "call_vol": 2067195,
+          "put_vol": 52639405,
+          "strike_skew": 0.9733,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25450.0,
+          "call_oi": 152685.0,
+          "put_oi": 1842165.0,
+          "call_coi": -22230.0,
+          "put_coi": 1326065.0,
+          "call_vol": 1135160,
+          "put_vol": 32206005,
+          "strike_skew": 1.0341,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25500.0,
+          "call_oi": 1882855.0,
+          "put_oi": 7365150.0,
+          "call_coi": -288795.0,
+          "put_coi": 3215095.0,
+          "call_vol": 15362425,
+          "put_vol": 118663285,
+          "strike_skew": 1.1974,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25550.0,
+          "call_oi": 208715.0,
+          "put_oi": 2350140.0,
+          "call_coi": 62595.0,
+          "put_coi": 1777360.0,
+          "call_vol": 5428995,
+          "put_vol": 57459415,
+          "strike_skew": 0.932,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25600.0,
+          "call_oi": 1118780.0,
+          "put_oi": 4788940.0,
+          "call_coi": 106730.0,
+          "put_coi": 3158025.0,
+          "call_vol": 33282080,
+          "put_vol": 106261090,
+          "strike_skew": 0.9346,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25650.0,
+          "call_oi": 588250.0,
+          "put_oi": 2933255.0,
+          "call_coi": 339040.0,
+          "put_coi": 2180295.0,
+          "call_vol": 31498610,
+          "put_vol": 79668290,
+          "strike_skew": 0.7308,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25700.0,
+          "call_oi": 3560050.0,
+          "put_oi": 7545915.0,
+          "call_coi": 983645.0,
+          "put_coi": 4469920.0,
+          "call_vol": 152681490,
+          "put_vol": 210544425,
+          "strike_skew": 0.6393,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25750.0,
+          "call_oi": 3028545.0,
+          "put_oi": 4024410.0,
+          "call_coi": 1861925.0,
+          "put_coi": 3101085.0,
+          "call_vol": 155237745,
+          "put_vol": 150451925,
+          "strike_skew": 0.2497,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25800.0,
+          "call_oi": 8508825.0,
+          "put_oi": 7404410.0,
+          "call_coi": 3226860.0,
+          "put_coi": 3602495.0,
+          "call_vol": 222638585,
+          "put_vol": 172130530,
+          "strike_skew": 0.055,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25850.0,
+          "call_oi": 2722980.0,
+          "put_oi": 1327820.0,
+          "call_coi": 839605.0,
+          "put_coi": 786500.0,
+          "call_vol": 88054135,
+          "put_vol": 34350940,
+          "strike_skew": -0.0327,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25900.0,
+          "call_oi": 4261400.0,
+          "put_oi": 1304875.0,
+          "call_coi": 1658670.0,
+          "put_coi": 589680.0,
+          "call_vol": 107535350,
+          "put_vol": 31822115,
+          "strike_skew": -0.4755,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 25950.0,
+          "call_oi": 2022150.0,
+          "put_oi": 373750.0,
+          "call_coi": 1370135.0,
+          "put_coi": 250380.0,
+          "call_vol": 60848385,
+          "put_vol": 5979090,
+          "strike_skew": -0.691,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 26000.0,
+          "call_oi": 10458045.0,
+          "put_oi": 2030860.0,
+          "call_coi": 2656745.0,
+          "put_coi": 180115.0,
+          "call_vol": 148953350,
+          "put_vol": 19939465,
+          "strike_skew": -0.873,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 26050.0,
+          "call_oi": 1678560.0,
+          "put_oi": 148330.0,
+          "call_coi": 978380.0,
+          "put_coi": 84175.0,
+          "call_vol": 42637140,
+          "put_vol": 1433055,
+          "strike_skew": -0.8416,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 26100.0,
+          "call_oi": 4929795.0,
+          "put_oi": 390585.0,
+          "call_coi": 2808455.0,
+          "put_coi": 31850.0,
+          "call_vol": 62199865,
+          "put_vol": 1953055,
+          "strike_skew": -0.9776,
+          "strike_signal": "STRONG_SELL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198924.759084,
+    "received_at_iso": "2026-02-04T15:25:24.759236",
+    "event_type": "option_chain_update",
+    "event_id": "8e989c75-8e5b-47cf-bea4-52be7a78ea6b",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:55:24.736215+00:00",
+      "event_id": "8e989c75-8e5b-47cf-bea4-52be7a78ea6b",
+      "symbol": "nifty",
+      "mode": "positional",
+      "expiry": "2026-02-17",
+      "underlying": 25760.2,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 25200.0,
+          "call_oi": 157235.0,
+          "put_oi": 294190.0,
+          "call_coi": 11115.0,
+          "put_coi": 53820.0,
+          "call_vol": 43485,
+          "put_vol": 296140,
+          "strike_skew": 0.6577,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25250.0,
+          "call_oi": 14170.0,
+          "put_oi": 58565.0,
+          "call_coi": 2405.0,
+          "put_coi": 26715.0,
+          "call_vol": 10530,
+          "put_vol": 224250,
+          "strike_skew": 0.8348,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25300.0,
+          "call_oi": 102830.0,
+          "put_oi": 327470.0,
+          "call_coi": -15600.0,
+          "put_coi": 92625.0,
+          "call_vol": 93340,
+          "put_vol": 800020,
+          "strike_skew": 1.4051,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25350.0,
+          "call_oi": 19045.0,
+          "put_oi": 112255.0,
+          "call_coi": 8125.0,
+          "put_coi": 67600.0,
+          "call_vol": 36140,
+          "put_vol": 380575,
+          "strike_skew": 0.7854,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25400.0,
+          "call_oi": 219050.0,
+          "put_oi": 361465.0,
+          "call_coi": -6435.0,
+          "put_coi": 121940.0,
+          "call_vol": 136890,
+          "put_vol": 1082055,
+          "strike_skew": 1.1114,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25450.0,
+          "call_oi": 27040.0,
+          "put_oi": 130715.0,
+          "call_coi": 18265.0,
+          "put_coi": 100750.0,
+          "call_vol": 38545,
+          "put_vol": 346255,
+          "strike_skew": 0.6931,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25500.0,
+          "call_oi": 348530.0,
+          "put_oi": 516490.0,
+          "call_coi": 11700.0,
+          "put_coi": 106535.0,
+          "call_vol": 479505,
+          "put_vol": 1764815,
+          "strike_skew": 0.8021,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25550.0,
+          "call_oi": 41405.0,
+          "put_oi": 86450.0,
+          "call_coi": 910.0,
+          "put_coi": 62270.0,
+          "call_vol": 104455,
+          "put_vol": 356005,
+          "strike_skew": 0.9712,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25600.0,
+          "call_oi": 105105.0,
+          "put_oi": 293020.0,
+          "call_coi": 2210.0,
+          "put_coi": 150540.0,
+          "call_vol": 467935,
+          "put_vol": 1163630,
+          "strike_skew": 0.9711,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 25650.0,
+          "call_oi": 42705.0,
+          "put_oi": 75465.0,
+          "call_coi": 23335.0,
+          "put_coi": 58825.0,
+          "call_vol": 249795,
+          "put_vol": 405535,
+          "strike_skew": 0.432,
+          "strike_signal": "BUY"
+        },
+        {
+          "strike": 25700.0,
+          "call_oi": 343460.0,
+          "put_oi": 420615.0,
+          "call_coi": 97110.0,
+          "put_coi": 205465.0,
+          "call_vol": 1623115,
+          "put_vol": 1979770,
+          "strike_skew": 0.3581,
+          "strike_signal": "BUY"
+        },
+        {
+          "strike": 25750.0,
+          "call_oi": 158795.0,
+          "put_oi": 194155.0,
+          "call_coi": 80145.0,
+          "put_coi": 113295.0,
+          "call_vol": 1052870,
+          "put_vol": 1044420,
+          "strike_skew": 0.1714,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25800.0,
+          "call_oi": 800215.0,
+          "put_oi": 701545.0,
+          "call_coi": 339560.0,
+          "put_coi": 281450.0,
+          "call_vol": 2801825,
+          "put_vol": 2651740,
+          "strike_skew": -0.0936,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25850.0,
+          "call_oi": 211120.0,
+          "put_oi": 92170.0,
+          "call_coi": 99385.0,
+          "put_coi": 53495.0,
+          "call_vol": 758030,
+          "put_vol": 354120,
+          "strike_skew": -0.3002,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 25900.0,
+          "call_oi": 346255.0,
+          "put_oi": 181155.0,
+          "call_coi": 100620.0,
+          "put_coi": 60060.0,
+          "call_vol": 1256190,
+          "put_vol": 538200,
+          "strike_skew": -0.2524,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 25950.0,
+          "call_oi": 165815.0,
+          "put_oi": 54275.0,
+          "call_coi": 125515.0,
+          "put_coi": 34840.0,
+          "call_vol": 645060,
+          "put_vol": 122590,
+          "strike_skew": -0.5655,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 26000.0,
+          "call_oi": 1654770.0,
+          "put_oi": 249080.0,
+          "call_coi": 74425.0,
+          "put_coi": 98735.0,
+          "call_vol": 3209375,
+          "put_vol": 631930,
+          "strike_skew": 0.1404,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 26050.0,
+          "call_oi": 133835.0,
+          "put_oi": 45955.0,
+          "call_coi": 86710.0,
+          "put_coi": 29185.0,
+          "call_vol": 738335,
+          "put_vol": 62595,
+          "strike_skew": -0.4964,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 26100.0,
+          "call_oi": 371930.0,
+          "put_oi": 46280.0,
+          "call_coi": 26260.0,
+          "put_coi": 22425.0,
+          "call_vol": 1292330,
+          "put_vol": 78195,
+          "strike_skew": -0.0788,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 26150.0,
+          "call_oi": 95615.0,
+          "put_oi": 44785.0,
+          "call_coi": 69420.0,
+          "put_coi": 26520.0,
+          "call_vol": 372255,
+          "put_vol": 36335,
+          "strike_skew": -0.4472,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 26200.0,
+          "call_oi": 372710.0,
+          "put_oi": 41860.0,
+          "call_coi": 58435.0,
+          "put_coi": 18005.0,
+          "call_vol": 1524575,
+          "put_vol": 62790,
+          "strike_skew": -0.5289,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 26250.0,
+          "call_oi": 150345.0,
+          "put_oi": 5460.0,
+          "call_coi": 116025.0,
+          "put_coi": 5330.0,
+          "call_vol": 432965,
+          "put_vol": 9555,
+          "strike_skew": -0.9122,
+          "strike_signal": "STRONG_SELL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198927.907413,
+    "received_at_iso": "2026-02-04T15:25:27.907500",
+    "event_type": "option_chain_update",
+    "event_id": "aa8c8eb4-e94e-4b3e-a7c8-7ba9195304d5",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:55:27.888575+00:00",
+      "event_id": "aa8c8eb4-e94e-4b3e-a7c8-7ba9195304d5",
+      "symbol": "banknifty",
+      "mode": "current",
+      "expiry": "2026-02-24",
+      "underlying": 60226.7,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 59200.0,
+          "call_oi": 52170.0,
+          "put_oi": 76380.0,
+          "call_coi": -56610.0,
+          "put_coi": -39540.0,
+          "call_vol": 21750,
+          "put_vol": 252030,
+          "strike_skew": -0.1775,
+          "strike_signal": "NEUTRAL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198928.816066,
+    "received_at_iso": "2026-02-04T15:25:28.816202",
+    "event_type": "indicator_update",
+    "event_id": "e13ad758-6d38-479f-919d-2f026636ad46",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:55:28.791712+00:00",
+      "event_id": "e13ad758-6d38-479f-919d-2f026636ad46",
+      "symbol": "nifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.2863,
+        "raw_skew": 0.2863,
+        "pcr": 1.1481,
+        "adr": "3.45",
+        "signal": "NEUTRAL",
+        "skew_confidence": 1.0,
+        "rsi": 37.58,
+        "ema_5": 25776.05,
+        "ema_9": 25781.9,
+        "ema_13": 25783.12,
+        "ema_21": 25780.04,
+        "ema_50": 25766.93,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 46242950.0,
+        "skew_activity_abs_coi": 46242950.0,
+        "pcr_put_oi_sum": 53691300.0,
+        "pcr_call_oi_sum": 46765160.0,
+        "put_coi_sum": 29740165.0,
+        "call_coi_sum": 16502785.0
+      },
+      "intuition_text": "The current market bias appears neutral, with the skew indicating mild bullish sentiment and a PCR above 1 suggesting a cautious stance among investors. The strong ADR of 3.45 and high put COI relative to call COI indicate that while there is a breadth of advancing stocks, market participants may be hedging against potential downside. Consider looking at protective puts or strategies that can benefit from volatility as clearer signals develop."
+    }
+  },
+  {
+    "received_at": 1770198928.816451,
+    "received_at_iso": "2026-02-04T15:25:28.816466",
+    "event_type": "indicator_update",
+    "event_id": "4ca8f1c6-a338-4965-a732-ea546294d8f9",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:55:28.791809+00:00",
+      "event_id": "4ca8f1c6-a338-4965-a732-ea546294d8f9",
+      "symbol": "nifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.1477,
+        "raw_skew": 0.1477,
+        "pcr": 0.7367,
+        "adr": "3.45",
+        "signal": "NEUTRAL",
+        "skew_confidence": 1.0,
+        "rsi": 37.58,
+        "ema_5": 25776.05,
+        "ema_9": 25781.9,
+        "ema_13": 25783.12,
+        "ema_21": 25780.04,
+        "ema_50": 25766.93,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 3120065.0,
+        "skew_activity_abs_coi": 3120065.0,
+        "pcr_put_oi_sum": 4333420.0,
+        "pcr_call_oi_sum": 5881980.0,
+        "put_coi_sum": 1790425.0,
+        "call_coi_sum": 1329640.0
+      },
+      "intuition_text": "The current market bias appears neutral, as indicated by the skew and the low put-call ratio. The strong advance/decline ratio suggests some bullish sentiment, but the higher put open interest indicates caution among traders. Consider looking at protective strategies or hedging options, as the market may need to consolidate before a clearer direction emerges."
+    }
+  },
+  {
+    "received_at": 1770198928.8165288,
+    "received_at_iso": "2026-02-04T15:25:28.816537",
+    "event_type": "indicator_update",
+    "event_id": "3e80793f-fac5-4ddd-867b-ffd85e29d082",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:55:28.791870+00:00",
+      "event_id": "3e80793f-fac5-4ddd-867b-ffd85e29d082",
+      "symbol": "banknifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.3971,
+        "raw_skew": 0.3971,
+        "pcr": 1.4641,
+        "adr": "1.80",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 24.44,
+        "ema_5": 60246.29,
+        "ema_9": 60264.11,
+        "ema_13": 60272.8,
+        "ema_21": 60274.51,
+        "ema_50": 60249.97,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": -4180710.0,
+        "skew_activity_abs_coi": 4180710.0,
+        "pcr_put_oi_sum": 76380.0,
+        "pcr_call_oi_sum": 52170.0,
+        "put_coi_sum": -2920440.0,
+        "call_coi_sum": -1260270.0
+      },
+      "intuition_text": "Current market bias appears bullish, supported by a higher Advance/Decline Ratio of 1.80, indicating strong market breadth. The elevated Put-Call Ratio (PCR) of 1.4641 suggests that sentiment may be leaning towards caution, while the negative Call and Put COI indicate a reduction in open interest, potentially signaling profit-taking. Consider looking at protective strategies or hedging options, particularly with Put options, to navigate potential volatility ahead."
+    }
+  },
+  {
+    "received_at": 1770198928.816566,
+    "received_at_iso": "2026-02-04T15:25:28.816580",
+    "event_type": "indicator_update",
+    "event_id": "01938306-f691-4be7-bdcb-fe63af038c1e",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:55:28.791926+00:00",
+      "event_id": "01938306-f691-4be7-bdcb-fe63af038c1e",
+      "symbol": "banknifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.7363,
+        "raw_skew": 0.7363,
+        "pcr": 2.7123,
+        "adr": "2.25",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 49.34,
+        "ema_5": 60269.01,
+        "ema_9": 60284.52,
+        "ema_13": 60289.07,
+        "ema_21": 60284.36,
+        "ema_50": 60253.29,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": 2730.0,
+        "skew_activity_abs_coi": 2730.0,
+        "pcr_put_oi_sum": 5940.0,
+        "pcr_call_oi_sum": 2190.0,
+        "put_coi_sum": 2370.0,
+        "call_coi_sum": 360.0
+      },
+      "intuition_text": "The current market bias appears bullish, indicated by a high Put-Call Ratio (PCR) of 2.7123, suggesting strong bearish sentiment among options traders. The Advance/Decline Ratio (ADR) of 2.25 reinforces this bullish stance, with more stocks advancing than declining. Traders might consider looking at call options (CE) for potential gains, as the skew also suggests a preference for upside exposure."
+    }
+  },
+  {
+    "received_at": 1770198928.8166049,
+    "received_at_iso": "2026-02-04T15:25:28.816610",
+    "event_type": "indicator_update",
+    "event_id": "a8d76d97-2929-4ecf-8aaa-2e76a694c1af",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:55:28.792045+00:00",
+      "event_id": "a8d76d97-2929-4ecf-8aaa-2e76a694c1af",
+      "symbol": "sensex",
+      "mode": "current",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "3.29",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": null,
+        "skew_activity_abs_coi": null,
+        "pcr_put_oi_sum": null,
+        "pcr_call_oi_sum": null,
+        "put_coi_sum": null,
+        "call_coi_sum": null
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a robust Advance/Decline Ratio of 3.29, indicating strong upward momentum among stocks. This suggests a favorable environment for potential bullish strategies, such as considering call options (CE), if market conditions remain stable. Traders may want to monitor for any shifts in market sentiment that could impact this bullish outlook."
+    }
+  },
+  {
+    "received_at": 1770198928.816632,
+    "received_at_iso": "2026-02-04T15:25:28.816638",
+    "event_type": "indicator_update",
+    "event_id": "7deeff95-ba56-4334-9e30-4a7441e3c76e",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:55:28.792070+00:00",
+      "event_id": "7deeff95-ba56-4334-9e30-4a7441e3c76e",
+      "symbol": "sensex",
+      "mode": "positional",
+      "indicators": {
+        "skew": -1.914,
+        "raw_skew": -1.914,
+        "pcr": 1.7698,
+        "adr": "3.29",
+        "signal": "STRONG_SELL",
+        "skew_confidence": 0.5225,
+        "rsi": 59.5,
+        "ema_5": 83850.09,
+        "ema_9": 83855.55,
+        "ema_13": 83851.2,
+        "ema_21": 83831.59,
+        "ema_50": 83784.42,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": -28360.0,
+        "skew_activity_abs_coi": 54280.0,
+        "pcr_put_oi_sum": 214000.0,
+        "pcr_call_oi_sum": 120920.0,
+        "put_coi_sum": 12960.0,
+        "call_coi_sum": -41320.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a strong Advance/Decline Ratio of 3.29 and a high Put-Call Ratio of 1.7698, indicating potential upward momentum. However, the negative skew (-1.9140) suggests some caution as it reflects a preference for downside protection among traders. Given these conditions, consider looking at call options (CE) as a potential strategy to capitalize on the bullish sentiment while remaining aware of the skew's implications."
+    }
+  },
+  {
+    "received_at": 1770198928.816664,
+    "received_at_iso": "2026-02-04T15:25:28.816668",
+    "event_type": "indicator_update",
+    "event_id": "ae17e2ca-8980-4fe6-9aa0-f3c0adf18443",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:55:28.792094+00:00",
+      "event_id": "ae17e2ca-8980-4fe6-9aa0-f3c0adf18443",
+      "symbol": "finnifty",
+      "mode": "current",
+      "indicators": {
+        "skew": -0.3879,
+        "raw_skew": -0.3879,
+        "pcr": 1.015,
+        "adr": "2.17",
+        "signal": "SELL",
+        "skew_confidence": 1.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": -377220.0,
+        "skew_activity_abs_coi": 377220.0,
+        "pcr_put_oi_sum": 207600.0,
+        "pcr_call_oi_sum": 204540.0,
+        "put_coi_sum": -115440.0,
+        "call_coi_sum": -261780.0
+      },
+      "intuition_text": "The current market bias for Finnifty appears bullish, supported by a positive Advance/Decline Ratio of 2.17, indicating strong market breadth. However, the Put-Call Ratio just above 1 suggests a slight caution as more puts are being purchased relative to calls. Traders might consider looking at call options (CE) for potential upside while remaining aware of the elevated put activity."
+    }
+  },
+  {
+    "received_at": 1770198928.816724,
+    "received_at_iso": "2026-02-04T15:25:28.816728",
+    "event_type": "indicator_update",
+    "event_id": "3a7e6b57-3e0c-4b57-b9e9-5f593a5c5392",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:55:28.792116+00:00",
+      "event_id": "3a7e6b57-3e0c-4b57-b9e9-5f593a5c5392",
+      "symbol": "finnifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "2.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 40.7,
+        "ema_5": 27817.62,
+        "ema_9": 27824.72,
+        "ema_13": 27827.91,
+        "ema_21": 27827.53,
+        "ema_50": 27810.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": 0.0,
+        "skew_activity_abs_coi": 0.0,
+        "pcr_put_oi_sum": 0.0,
+        "pcr_call_oi_sum": 0.0,
+        "put_coi_sum": 0.0,
+        "call_coi_sum": 0.0
+      },
+      "intuition_text": "We don't recommend trading next month's options for FINNIFTY"
+    }
+  },
+  {
+    "received_at": 1770198932.275696,
+    "received_at_iso": "2026-02-04T15:25:32.275741",
+    "event_type": "option_chain_update",
+    "event_id": "3693b808-fd8f-4f86-be1d-a9651c83815e",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:55:32.258154+00:00",
+      "event_id": "3693b808-fd8f-4f86-be1d-a9651c83815e",
+      "symbol": "banknifty",
+      "mode": "positional",
+      "expiry": "2026-03-30",
+      "underlying": 60231.5,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 59200.0,
+          "call_oi": 2190.0,
+          "put_oi": 5910.0,
+          "call_coi": 360.0,
+          "put_coi": 2340.0,
+          "call_vol": 660,
+          "put_vol": 5850,
+          "strike_skew": 0.7333,
+          "strike_signal": "STRONG_BUY"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198935.778429,
+    "received_at_iso": "2026-02-04T15:25:35.778797",
+    "event_type": "option_chain_update",
+    "event_id": "a22a0bd0-68a7-4d93-86ea-27b2a8752ea6",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:55:35.587853+00:00",
+      "event_id": "a22a0bd0-68a7-4d93-86ea-27b2a8752ea6",
+      "symbol": "sensex",
+      "mode": "current",
+      "expiry": "",
+      "underlying": 83774.68,
+      "is_incremental": false,
+      "strikes": []
+    }
+  },
+  {
+    "received_at": 1770198939.974845,
+    "received_at_iso": "2026-02-04T15:25:39.974879",
+    "event_type": "option_chain_update",
+    "event_id": "c8ac849a-21d1-423c-9f70-c9815622d5ec",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:55:39.817379+00:00",
+      "event_id": "c8ac849a-21d1-423c-9f70-c9815622d5ec",
+      "symbol": "sensex",
+      "mode": "positional",
+      "expiry": "",
+      "underlying": 83771.3,
+      "is_incremental": false,
+      "strikes": []
+    }
+  },
+  {
+    "received_at": 1770198942.578505,
+    "received_at_iso": "2026-02-04T15:25:42.578653",
+    "event_type": "option_chain_update",
+    "event_id": "7aad4824-299e-4bf6-b9a3-d0fc5e7e228f",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:55:42.555326+00:00",
+      "event_id": "7aad4824-299e-4bf6-b9a3-d0fc5e7e228f",
+      "symbol": "finnifty",
+      "mode": "current",
+      "expiry": "2026-02-24",
+      "underlying": 27797.4,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 27550.0,
+          "call_oi": 3540.0,
+          "put_oi": 8220.0,
+          "call_coi": -3540.0,
+          "put_coi": -10260.0,
+          "call_vol": 960,
+          "put_vol": 21420,
+          "strike_skew": 0.487,
+          "strike_signal": "BUY"
+        },
+        {
+          "strike": 27600.0,
+          "call_oi": 10980.0,
+          "put_oi": 37440.0,
+          "call_coi": -9660.0,
+          "put_coi": 11640.0,
+          "call_vol": 14880,
+          "put_vol": 75480,
+          "strike_skew": 10.7576,
+          "strike_signal": "STRONG_BUY"
+        },
+        {
+          "strike": 27650.0,
+          "call_oi": 8100.0,
+          "put_oi": 4200.0,
+          "call_coi": -8820.0,
+          "put_coi": -4320.0,
+          "call_vol": 5160,
+          "put_vol": 14520,
+          "strike_skew": -0.3425,
+          "strike_signal": "SELL"
+        },
+        {
+          "strike": 27700.0,
+          "call_oi": 37980.0,
+          "put_oi": 24360.0,
+          "call_coi": -64500.0,
+          "put_coi": -36840.0,
+          "call_vol": 78120,
+          "put_vol": 75960,
+          "strike_skew": -0.2729,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 27750.0,
+          "call_oi": 8760.0,
+          "put_oi": 8520.0,
+          "call_coi": -15960.0,
+          "put_coi": -1440.0,
+          "call_vol": 33840,
+          "put_vol": 44640,
+          "strike_skew": -0.8345,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 27800.0,
+          "call_oi": 21120.0,
+          "put_oi": 21000.0,
+          "call_coi": -32280.0,
+          "put_coi": -3720.0,
+          "call_vol": 148860,
+          "put_vol": 136680,
+          "strike_skew": -0.7933,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 27850.0,
+          "call_oi": 5700.0,
+          "put_oi": 2700.0,
+          "call_coi": 2340.0,
+          "put_coi": -180.0,
+          "call_vol": 30000,
+          "put_vol": 15060,
+          "strike_skew": -1.1667,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 27900.0,
+          "call_oi": 10620.0,
+          "put_oi": 7380.0,
+          "call_coi": -7140.0,
+          "put_coi": 60.0,
+          "call_vol": 49020,
+          "put_vol": 23520,
+          "strike_skew": -1.0169,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 27950.0,
+          "call_oi": 1680.0,
+          "put_oi": 840.0,
+          "call_coi": -2880.0,
+          "put_coi": -360.0,
+          "call_vol": 4080,
+          "put_vol": 960,
+          "strike_skew": -0.7778,
+          "strike_signal": "STRONG_SELL"
+        },
+        {
+          "strike": 28000.0,
+          "call_oi": 49920.0,
+          "put_oi": 9000.0,
+          "call_coi": -19440.0,
+          "put_coi": 3540.0,
+          "call_vol": 106500,
+          "put_vol": 28020,
+          "strike_skew": -1.4453,
+          "strike_signal": "STRONG_SELL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198942.9199371,
+    "received_at_iso": "2026-02-04T15:25:42.919985",
+    "event_type": "option_chain_update",
+    "event_id": "3089567d-801f-4603-8c84-d645c73e9ff8",
+    "data": {
+      "event_type": "option_chain_update",
+      "timestamp": "2026-02-04T09:55:42.901819+00:00",
+      "event_id": "3089567d-801f-4603-8c84-d645c73e9ff8",
+      "symbol": "finnifty",
+      "mode": "positional",
+      "expiry": "2026-03-30",
+      "underlying": 27797.4,
+      "is_incremental": false,
+      "strikes": [
+        {
+          "strike": 27600.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 27700.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 27800.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 27900.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        },
+        {
+          "strike": 28000.0,
+          "call_oi": 0.0,
+          "put_oi": 0.0,
+          "call_coi": 0.0,
+          "put_coi": 0.0,
+          "call_vol": 0,
+          "put_vol": 0,
+          "strike_skew": 0.0,
+          "strike_signal": "NEUTRAL"
+        }
+      ]
+    }
+  },
+  {
+    "received_at": 1770198968.449814,
+    "received_at_iso": "2026-02-04T15:26:08.449864",
+    "event_type": "snapshot",
+    "event_id": "2ec0b458-aa6c-4d50-a477-22a2f08e4092",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:56:08.422497+00:00",
+      "event_id": "2ec0b458-aa6c-4d50-a477-22a2f08e4092",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "nifty",
+        "mode": "current",
+        "indicators": {
+          "skew": 0.2863,
+          "raw_skew": 0.2863,
+          "pcr": 1.1481,
+          "adr": "3.45",
+          "signal": "NEUTRAL",
+          "skew_confidence": 1.0,
+          "rsi": 37.58,
+          "ema_5": 25776.05,
+          "ema_9": 25781.9,
+          "ema_13": 25783.12,
+          "ema_21": 25780.04,
+          "ema_50": 25766.93,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 25675.9667,
+          "pivot_point": 25675.9667,
+          "support_fields": {
+            "skew_denominator_coi": 46242950.0,
+            "skew_activity_abs_coi": 46242950.0,
+            "pcr_put_oi_sum": 53691300.0,
+            "pcr_call_oi_sum": 46765160.0,
+            "put_coi_sum": 29740165.0,
+            "call_coi_sum": 16502785.0
+          },
+          "intuition_text": "The current market bias appears neutral, with the skew indicating mild bullish sentiment and a PCR above 1 suggesting a cautious stance among investors. The strong ADR of 3.45 and high put COI relative to call COI indicate that while there is a breadth of advancing stocks, market participants may be hedging against potential downside. Consider looking at protective puts or strategies that can benefit from volatility as clearer signals develop."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198968.4499378,
+    "received_at_iso": "2026-02-04T15:26:08.449946",
+    "event_type": "snapshot",
+    "event_id": "30303885-db62-4fd4-b505-f14e31df7992",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:56:08.422549+00:00",
+      "event_id": "30303885-db62-4fd4-b505-f14e31df7992",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "nifty",
+        "mode": "positional",
+        "indicators": {
+          "skew": 0.1477,
+          "raw_skew": 0.1477,
+          "pcr": 0.7367,
+          "adr": "3.45",
+          "signal": "NEUTRAL",
+          "skew_confidence": 1.0,
+          "rsi": 37.58,
+          "ema_5": 25776.05,
+          "ema_9": 25781.9,
+          "ema_13": 25783.12,
+          "ema_21": 25780.04,
+          "ema_50": 25766.93,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 25675.9667,
+          "pivot_point": 25675.9667,
+          "support_fields": {
+            "skew_denominator_coi": 3120065.0,
+            "skew_activity_abs_coi": 3120065.0,
+            "pcr_put_oi_sum": 4333420.0,
+            "pcr_call_oi_sum": 5881980.0,
+            "put_coi_sum": 1790425.0,
+            "call_coi_sum": 1329640.0
+          },
+          "intuition_text": "The current market bias appears neutral, as indicated by the skew and the low put-call ratio. The strong advance/decline ratio suggests some bullish sentiment, but the higher put open interest indicates caution among traders. Consider looking at protective strategies or hedging options, as the market may need to consolidate before a clearer direction emerges."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198968.449973,
+    "received_at_iso": "2026-02-04T15:26:08.449979",
+    "event_type": "snapshot",
+    "event_id": "1f9db0ca-9520-4a47-82c7-5693050896f7",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:56:08.422571+00:00",
+      "event_id": "1f9db0ca-9520-4a47-82c7-5693050896f7",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "banknifty",
+        "mode": "current",
+        "indicators": {
+          "skew": 0.3971,
+          "raw_skew": 0.3971,
+          "pcr": 1.4641,
+          "adr": "1.80",
+          "signal": "BUY",
+          "skew_confidence": 1.0,
+          "rsi": 24.44,
+          "ema_5": 60246.29,
+          "ema_9": 60264.11,
+          "ema_13": 60272.8,
+          "ema_21": 60274.51,
+          "ema_50": 60249.97,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 59233.15,
+          "pivot_point": 59233.15,
+          "support_fields": {
+            "skew_denominator_coi": -4180710.0,
+            "skew_activity_abs_coi": 4180710.0,
+            "pcr_put_oi_sum": 76380.0,
+            "pcr_call_oi_sum": 52170.0,
+            "put_coi_sum": -2920440.0,
+            "call_coi_sum": -1260270.0
+          },
+          "intuition_text": "Current market bias appears bullish, supported by a higher Advance/Decline Ratio of 1.80, indicating strong market breadth. The elevated Put-Call Ratio (PCR) of 1.4641 suggests that sentiment may be leaning towards caution, while the negative Call and Put COI indicate a reduction in open interest, potentially signaling profit-taking. Consider looking at protective strategies or hedging options, particularly with Put options, to navigate potential volatility ahead."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198968.450006,
+    "received_at_iso": "2026-02-04T15:26:08.450012",
+    "event_type": "snapshot",
+    "event_id": "2bf20950-edae-46cd-8a25-fb740ceee9f3",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:56:08.422586+00:00",
+      "event_id": "2bf20950-edae-46cd-8a25-fb740ceee9f3",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "banknifty",
+        "mode": "positional",
+        "indicators": {
+          "skew": 0.7333,
+          "raw_skew": 0.7333,
+          "pcr": 2.6986,
+          "adr": "1.80",
+          "signal": "NEUTRAL",
+          "skew_confidence": 0.0,
+          "rsi": 24.44,
+          "ema_5": 60246.29,
+          "ema_9": 60264.11,
+          "ema_13": 60272.8,
+          "ema_21": 60274.51,
+          "ema_50": 60249.97,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 59233.15,
+          "pivot_point": 59233.15,
+          "support_fields": {
+            "skew_denominator_coi": 2700.0,
+            "skew_activity_abs_coi": 2700.0,
+            "pcr_put_oi_sum": 5910.0,
+            "pcr_call_oi_sum": 2190.0,
+            "put_coi_sum": 2340.0,
+            "call_coi_sum": 360.0
+          },
+          "intuition_text": "The current market bias appears to be bullish, indicated by a high Put-Call Ratio (PCR) of 2.6986, which suggests a strong preference for puts over calls. The Advance/Decline Ratio (ADR) of 1.80 supports this bullish sentiment, as more stocks are advancing than declining. Given the low Call Open Interest (COI) relative to Put COI, consider looking at call options (CE) to capitalize on potential upward movement."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198968.450036,
+    "received_at_iso": "2026-02-04T15:26:08.450041",
+    "event_type": "snapshot",
+    "event_id": "fa9e7ce6-8595-498c-a522-8a1c948065a0",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:56:08.422600+00:00",
+      "event_id": "fa9e7ce6-8595-498c-a522-8a1c948065a0",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "sensex",
+        "mode": "current",
+        "indicators": {
+          "skew": null,
+          "raw_skew": null,
+          "pcr": null,
+          "adr": "3.29",
+          "signal": "NEUTRAL",
+          "skew_confidence": 0.0,
+          "rsi": 45.0,
+          "ema_5": 83823.83,
+          "ema_9": 83838.59,
+          "ema_13": 83839.67,
+          "ema_21": 83826.01,
+          "ema_50": 83782.62,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 83591.18,
+          "pivot_point": 83591.18,
+          "support_fields": {
+            "skew_denominator_coi": null,
+            "skew_activity_abs_coi": null,
+            "pcr_put_oi_sum": null,
+            "pcr_call_oi_sum": null,
+            "put_coi_sum": null,
+            "call_coi_sum": null
+          },
+          "intuition_text": "The current market bias appears bullish, as indicated by a strong Advance/Decline Ratio of 3.29, suggesting a favorable breadth in market participation. This positive sentiment could indicate potential upward momentum, making it worth considering looking at Call Options (CE) for exposure to potential gains. Traders may want to monitor for any shifts in sentiment or indicators that could alter this outlook."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198968.450063,
+    "received_at_iso": "2026-02-04T15:26:08.450069",
+    "event_type": "snapshot",
+    "event_id": "04d0fece-c9c4-4de5-865a-30fad76eaebf",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:56:08.422612+00:00",
+      "event_id": "04d0fece-c9c4-4de5-865a-30fad76eaebf",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "sensex",
+        "mode": "positional",
+        "indicators": {
+          "skew": -1.914,
+          "raw_skew": -1.914,
+          "pcr": 1.7698,
+          "adr": "3.29",
+          "signal": "STRONG_SELL",
+          "skew_confidence": 0.5225,
+          "rsi": 45.0,
+          "ema_5": 83823.83,
+          "ema_9": 83838.59,
+          "ema_13": 83839.67,
+          "ema_21": 83826.01,
+          "ema_50": 83782.62,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": 83591.18,
+          "pivot_point": 83591.18,
+          "support_fields": {
+            "skew_denominator_coi": -28360.0,
+            "skew_activity_abs_coi": 54280.0,
+            "pcr_put_oi_sum": 214000.0,
+            "pcr_call_oi_sum": 120920.0,
+            "put_coi_sum": 12960.0,
+            "call_coi_sum": -41320.0
+          },
+          "intuition_text": "The current market bias appears bullish, supported by a strong Advance/Decline Ratio of 3.29 and a high Put-Call Ratio (PCR) of 1.7698, indicating more puts being traded relative to calls. The negative skew of -1.9140 suggests a potential for downside protection, while the decrease in Call Open Interest (COI) may indicate profit-taking or a lack of new bullish positions. Traders might consider looking at call options to capitalize on the bullish trend while being mindful of potential volatility."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198968.450089,
+    "received_at_iso": "2026-02-04T15:26:08.450097",
+    "event_type": "snapshot",
+    "event_id": "a697e301-7b23-459e-9078-7546926e3815",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:56:08.422624+00:00",
+      "event_id": "a697e301-7b23-459e-9078-7546926e3815",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "finnifty",
+        "mode": "current",
+        "indicators": {
+          "skew": -0.3779,
+          "raw_skew": -0.3779,
+          "pcr": 1.0009,
+          "adr": "2.17",
+          "signal": "SELL",
+          "skew_confidence": 1.0,
+          "rsi": 15.33,
+          "ema_5": 27803.11,
+          "ema_9": 27812.79,
+          "ema_13": 27818.28,
+          "ema_21": 27821.3,
+          "ema_50": 27808.66,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": null,
+          "pivot_point": null,
+          "support_fields": {
+            "skew_denominator_coi": -379620.0,
+            "skew_activity_abs_coi": 379620.0,
+            "pcr_put_oi_sum": 204960.0,
+            "pcr_call_oi_sum": 204780.0,
+            "put_coi_sum": -118080.0,
+            "call_coi_sum": -261540.0
+          },
+          "intuition_text": "The current market bias appears bullish, supported by a strong Advance/Decline Ratio of 2.17, indicating more stocks are rising than falling. The Put-Call Ratio is neutral, while the negative Call and Put Change in Open Interest (COI) suggests a potential reduction in overall positions. Traders might consider looking at call options (CE) if the bullish sentiment continues to strengthen."
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198968.450156,
+    "received_at_iso": "2026-02-04T15:26:08.450160",
+    "event_type": "snapshot",
+    "event_id": "f58b0db2-a8fd-4752-a0cf-bfa35b208212",
+    "data": {
+      "event_type": "snapshot",
+      "timestamp": "2026-02-04T09:56:08.422636+00:00",
+      "event_id": "f58b0db2-a8fd-4752-a0cf-bfa35b208212",
+      "market_state": "UNKNOWN",
+      "data": {
+        "symbol": "finnifty",
+        "mode": "positional",
+        "indicators": {
+          "skew": null,
+          "raw_skew": null,
+          "pcr": null,
+          "adr": "2.17",
+          "signal": "NEUTRAL",
+          "skew_confidence": 0.0,
+          "rsi": 15.33,
+          "ema_5": 27803.11,
+          "ema_9": 27812.79,
+          "ema_13": 27818.28,
+          "ema_21": 27821.3,
+          "ema_50": 27808.66,
+          "bb_upper": null,
+          "bb_middle": null,
+          "bb_lower": null,
+          "vwap": null,
+          "pivot_point": null,
+          "support_fields": {
+            "skew_denominator_coi": 0.0,
+            "skew_activity_abs_coi": 0.0,
+            "pcr_put_oi_sum": 0.0,
+            "pcr_call_oi_sum": 0.0,
+            "put_coi_sum": 0.0,
+            "call_coi_sum": 0.0
+          },
+          "intuition_text": "We don't recommend trading next month's options for FINNIFTY"
+        }
+      }
+    }
+  },
+  {
+    "received_at": 1770198988.832554,
+    "received_at_iso": "2026-02-04T15:26:28.833200",
+    "event_type": "indicator_update",
+    "event_id": "664bd824-ea1d-4c04-bcb3-18c1a657d309",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:56:28.793148+00:00",
+      "event_id": "664bd824-ea1d-4c04-bcb3-18c1a657d309",
+      "symbol": "nifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.2863,
+        "raw_skew": 0.2863,
+        "pcr": 1.1481,
+        "adr": "3.45",
+        "signal": "NEUTRAL",
+        "skew_confidence": 1.0,
+        "rsi": 37.58,
+        "ema_5": 25776.05,
+        "ema_9": 25781.9,
+        "ema_13": 25783.12,
+        "ema_21": 25780.04,
+        "ema_50": 25766.93,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 46242950.0,
+        "skew_activity_abs_coi": 46242950.0,
+        "pcr_put_oi_sum": 53691300.0,
+        "pcr_call_oi_sum": 46765160.0,
+        "put_coi_sum": 29740165.0,
+        "call_coi_sum": 16502785.0
+      },
+      "intuition_text": "The current market bias appears neutral, with the skew indicating mild bullish sentiment and a PCR above 1 suggesting a cautious stance among investors. The strong ADR of 3.45 and high put COI relative to call COI indicate that while there is a breadth of advancing stocks, market participants may be hedging against potential downside. Consider looking at protective puts or strategies that can benefit from volatility as clearer signals develop."
+    }
+  },
+  {
+    "received_at": 1770198988.836055,
+    "received_at_iso": "2026-02-04T15:26:28.836086",
+    "event_type": "indicator_update",
+    "event_id": "2ebb9a6f-e8e3-4863-915e-29d90f2788ea",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:56:28.793215+00:00",
+      "event_id": "2ebb9a6f-e8e3-4863-915e-29d90f2788ea",
+      "symbol": "nifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.1477,
+        "raw_skew": 0.1477,
+        "pcr": 0.7367,
+        "adr": "3.45",
+        "signal": "NEUTRAL",
+        "skew_confidence": 1.0,
+        "rsi": 37.58,
+        "ema_5": 25776.05,
+        "ema_9": 25781.9,
+        "ema_13": 25783.12,
+        "ema_21": 25780.04,
+        "ema_50": 25766.93,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 25675.9667,
+        "pivot_point": 25675.9667
+      },
+      "support_fields": {
+        "skew_denominator_coi": 3120065.0,
+        "skew_activity_abs_coi": 3120065.0,
+        "pcr_put_oi_sum": 4333420.0,
+        "pcr_call_oi_sum": 5881980.0,
+        "put_coi_sum": 1790425.0,
+        "call_coi_sum": 1329640.0
+      },
+      "intuition_text": "The current market bias appears neutral, as indicated by the skew and the low put-call ratio. The strong advance/decline ratio suggests some bullish sentiment, but the higher put open interest indicates caution among traders. Consider looking at protective strategies or hedging options, as the market may need to consolidate before a clearer direction emerges."
+    }
+  },
+  {
+    "received_at": 1770198988.83617,
+    "received_at_iso": "2026-02-04T15:26:28.836180",
+    "event_type": "indicator_update",
+    "event_id": "eda1ea38-e4f9-46ce-8f51-70f0c59efb37",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:56:28.793313+00:00",
+      "event_id": "eda1ea38-e4f9-46ce-8f51-70f0c59efb37",
+      "symbol": "banknifty",
+      "mode": "current",
+      "indicators": {
+        "skew": 0.3971,
+        "raw_skew": 0.3971,
+        "pcr": 1.4641,
+        "adr": "1.80",
+        "signal": "BUY",
+        "skew_confidence": 1.0,
+        "rsi": 24.44,
+        "ema_5": 60246.29,
+        "ema_9": 60264.11,
+        "ema_13": 60272.8,
+        "ema_21": 60274.51,
+        "ema_50": 60249.97,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": -4180710.0,
+        "skew_activity_abs_coi": 4180710.0,
+        "pcr_put_oi_sum": 76380.0,
+        "pcr_call_oi_sum": 52170.0,
+        "put_coi_sum": -2920440.0,
+        "call_coi_sum": -1260270.0
+      },
+      "intuition_text": "Current market bias appears bullish, supported by a higher Advance/Decline Ratio of 1.80, indicating strong market breadth. The elevated Put-Call Ratio (PCR) of 1.4641 suggests that sentiment may be leaning towards caution, while the negative Call and Put COI indicate a reduction in open interest, potentially signaling profit-taking. Consider looking at protective strategies or hedging options, particularly with Put options, to navigate potential volatility ahead."
+    }
+  },
+  {
+    "received_at": 1770198988.836223,
+    "received_at_iso": "2026-02-04T15:26:28.836229",
+    "event_type": "indicator_update",
+    "event_id": "2bed7769-e3e4-4858-a219-2fed259d14b1",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:56:28.793410+00:00",
+      "event_id": "2bed7769-e3e4-4858-a219-2fed259d14b1",
+      "symbol": "banknifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": 0.7333,
+        "raw_skew": 0.7333,
+        "pcr": 2.6986,
+        "adr": "1.80",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 24.44,
+        "ema_5": 60246.29,
+        "ema_9": 60264.11,
+        "ema_13": 60272.8,
+        "ema_21": 60274.51,
+        "ema_50": 60249.97,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 59233.15,
+        "pivot_point": 59233.15
+      },
+      "support_fields": {
+        "skew_denominator_coi": 2700.0,
+        "skew_activity_abs_coi": 2700.0,
+        "pcr_put_oi_sum": 5910.0,
+        "pcr_call_oi_sum": 2190.0,
+        "put_coi_sum": 2340.0,
+        "call_coi_sum": 360.0
+      },
+      "intuition_text": "The current market bias appears to be bullish, indicated by a high Put-Call Ratio (PCR) of 2.6986, which suggests a strong preference for puts over calls. The Advance/Decline Ratio (ADR) of 1.80 supports this bullish sentiment, as more stocks are advancing than declining. Given the low Call Open Interest (COI) relative to Put COI, consider looking at call options (CE) to capitalize on potential upward movement."
+    }
+  },
+  {
+    "received_at": 1770198988.836258,
+    "received_at_iso": "2026-02-04T15:26:28.836264",
+    "event_type": "indicator_update",
+    "event_id": "9baf65c1-346e-4672-a7db-fee75b88f2fc",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:56:28.793545+00:00",
+      "event_id": "9baf65c1-346e-4672-a7db-fee75b88f2fc",
+      "symbol": "sensex",
+      "mode": "current",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "3.29",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 45.0,
+        "ema_5": 83823.83,
+        "ema_9": 83838.59,
+        "ema_13": 83839.67,
+        "ema_21": 83826.01,
+        "ema_50": 83782.62,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": null,
+        "skew_activity_abs_coi": null,
+        "pcr_put_oi_sum": null,
+        "pcr_call_oi_sum": null,
+        "put_coi_sum": null,
+        "call_coi_sum": null
+      },
+      "intuition_text": "The current market bias appears bullish, as indicated by a strong Advance/Decline Ratio of 3.29, suggesting a favorable breadth in market participation. This positive sentiment could indicate potential upward momentum, making it worth considering looking at Call Options (CE) for exposure to potential gains. Traders may want to monitor for any shifts in sentiment or indicators that could alter this outlook."
+    }
+  },
+  {
+    "received_at": 1770198988.836289,
+    "received_at_iso": "2026-02-04T15:26:28.836295",
+    "event_type": "indicator_update",
+    "event_id": "3912d791-bd82-4ed8-a81f-e150193ffa07",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:56:28.793585+00:00",
+      "event_id": "3912d791-bd82-4ed8-a81f-e150193ffa07",
+      "symbol": "sensex",
+      "mode": "positional",
+      "indicators": {
+        "skew": -1.914,
+        "raw_skew": -1.914,
+        "pcr": 1.7698,
+        "adr": "3.29",
+        "signal": "STRONG_SELL",
+        "skew_confidence": 0.5225,
+        "rsi": 45.0,
+        "ema_5": 83823.83,
+        "ema_9": 83838.59,
+        "ema_13": 83839.67,
+        "ema_21": 83826.01,
+        "ema_50": 83782.62,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": 83591.18,
+        "pivot_point": 83591.18
+      },
+      "support_fields": {
+        "skew_denominator_coi": -28360.0,
+        "skew_activity_abs_coi": 54280.0,
+        "pcr_put_oi_sum": 214000.0,
+        "pcr_call_oi_sum": 120920.0,
+        "put_coi_sum": 12960.0,
+        "call_coi_sum": -41320.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a strong Advance/Decline Ratio of 3.29 and a high Put-Call Ratio (PCR) of 1.7698, indicating more puts being traded relative to calls. The negative skew of -1.9140 suggests a potential for downside protection, while the decrease in Call Open Interest (COI) may indicate profit-taking or a lack of new bullish positions. Traders might consider looking at call options to capitalize on the bullish trend while being mindful of potential volatility."
+    }
+  },
+  {
+    "received_at": 1770198988.8363168,
+    "received_at_iso": "2026-02-04T15:26:28.836327",
+    "event_type": "indicator_update",
+    "event_id": "6d1cb5a8-3597-4594-94ad-aee8f4b84414",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:56:28.793608+00:00",
+      "event_id": "6d1cb5a8-3597-4594-94ad-aee8f4b84414",
+      "symbol": "finnifty",
+      "mode": "current",
+      "indicators": {
+        "skew": -0.3779,
+        "raw_skew": -0.3779,
+        "pcr": 1.0009,
+        "adr": "2.17",
+        "signal": "SELL",
+        "skew_confidence": 1.0,
+        "rsi": 15.33,
+        "ema_5": 27803.11,
+        "ema_9": 27812.79,
+        "ema_13": 27818.28,
+        "ema_21": 27821.3,
+        "ema_50": 27808.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": -379620.0,
+        "skew_activity_abs_coi": 379620.0,
+        "pcr_put_oi_sum": 204960.0,
+        "pcr_call_oi_sum": 204780.0,
+        "put_coi_sum": -118080.0,
+        "call_coi_sum": -261540.0
+      },
+      "intuition_text": "The current market bias appears bullish, supported by a strong Advance/Decline Ratio of 2.17, indicating more stocks are rising than falling. The Put-Call Ratio is neutral, while the negative Call and Put Change in Open Interest (COI) suggests a potential reduction in overall positions. Traders might consider looking at call options (CE) if the bullish sentiment continues to strengthen."
+    }
+  },
+  {
+    "received_at": 1770198988.8364081,
+    "received_at_iso": "2026-02-04T15:26:28.836413",
+    "event_type": "indicator_update",
+    "event_id": "1b52056d-1e27-42ca-8bcf-752c7c2743e2",
+    "data": {
+      "event_type": "indicator_update",
+      "timestamp": "2026-02-04T09:56:28.793629+00:00",
+      "event_id": "1b52056d-1e27-42ca-8bcf-752c7c2743e2",
+      "symbol": "finnifty",
+      "mode": "positional",
+      "indicators": {
+        "skew": null,
+        "raw_skew": null,
+        "pcr": null,
+        "adr": "2.17",
+        "signal": "NEUTRAL",
+        "skew_confidence": 0.0,
+        "rsi": 15.33,
+        "ema_5": 27803.11,
+        "ema_9": 27812.79,
+        "ema_13": 27818.28,
+        "ema_21": 27821.3,
+        "ema_50": 27808.66,
+        "bb_upper": null,
+        "bb_middle": null,
+        "bb_lower": null,
+        "bb_bandwidth": null,
+        "vwap": null,
+        "pivot_point": null
+      },
+      "support_fields": {
+        "skew_denominator_coi": 0.0,
+        "skew_activity_abs_coi": 0.0,
+        "pcr_put_oi_sum": 0.0,
+        "pcr_call_oi_sum": 0.0,
+        "put_coi_sum": 0.0,
+        "call_coi_sum": 0.0
+      },
+      "intuition_text": "We don't recommend trading next month's options for FINNIFTY"
+    }
+  },
+  {
+    "received_at": 1770199018.817183,
+    "received_at_iso": "2026-02-04T15:26:58.817288",
+    "event_type": "heartbeat",
+    "event_id": "75d9799d-f9ca-411c-8e62-2996e80746f1",
+    "data": {
+      "event_type": "heartbeat",
+      "timestamp": "2026-02-04T09:56:58.800042+00:00",
+      "event_id": "75d9799d-f9ca-411c-8e62-2996e80746f1",
+      "sequence": 24
+    }
+  }
+]

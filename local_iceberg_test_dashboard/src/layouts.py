@@ -541,6 +541,7 @@ def create_indicators_panel(
     def format_pcr(v): return f"{v:.2f}"
     def format_pct(v): return f"{v:.1f}%"
     def format_rsi(v): return f"{v:.1f}"
+    def format_coi(v): return f"{v/1000:+,.0f}K" if abs(v) >= 1000 else f"{v:+,.0f}"
     
     # Create indicator grid
     indicator_items = [
@@ -553,6 +554,8 @@ def create_indicators_panel(
         create_indicator_value("Confidence", indicators.skew_confidence, format_pct),
         create_indicator_value("ADR", indicators.adr, format_pcr),
         create_indicator_value("RSI", indicators.rsi, format_rsi, get_rsi_color),
+        create_indicator_value("Call COI", indicators.call_coi_sum, format_coi, lambda v: COLORS["positive"] if v and v > 0 else COLORS["negative"]),
+        create_indicator_value("Put COI", indicators.put_coi_sum, format_coi, lambda v: COLORS["negative"] if v and v > 0 else COLORS["positive"]),
     ]
     
     # Replace Signal indicator with custom display
@@ -785,6 +788,7 @@ def create_option_chain_table(
             "put_oi": f"{strike.put_oi:,}" if strike.put_oi else "--",
             "is_atm": is_atm,
             "skew_value": strike.strike_skew if strike.strike_skew is not None else 0,
+            "signal": strike.signal or "NEUTRAL",
         })
     
     # Create DataTable with conditional styling
@@ -817,6 +821,53 @@ def create_option_chain_table(
             "color": COLORS["text_primary"],
         },
         style_data_conditional=[
+            # Signal-based row coloring for strike column
+            # STRONG_BUY - dark green background
+            {
+                "if": {
+                    "filter_query": '{signal} eq "STRONG_BUY"',
+                    "column_id": "strike",
+                },
+                "backgroundColor": "rgba(76, 175, 80, 0.4)",
+                "color": COLORS["text_light"],
+                "fontWeight": "bold",
+            },
+            # BUY - light green background
+            {
+                "if": {
+                    "filter_query": '{signal} eq "BUY"',
+                    "column_id": "strike",
+                },
+                "backgroundColor": "rgba(76, 175, 80, 0.2)",
+                "fontWeight": "600",
+            },
+            # STRONG_SELL - dark red background
+            {
+                "if": {
+                    "filter_query": '{signal} eq "STRONG_SELL"',
+                    "column_id": "strike",
+                },
+                "backgroundColor": "rgba(244, 67, 54, 0.4)",
+                "color": COLORS["text_light"],
+                "fontWeight": "bold",
+            },
+            # SELL - light red background
+            {
+                "if": {
+                    "filter_query": '{signal} eq "SELL"',
+                    "column_id": "strike",
+                },
+                "backgroundColor": "rgba(244, 67, 54, 0.2)",
+                "fontWeight": "600",
+            },
+            # NEUTRAL - gray background (subtle)
+            {
+                "if": {
+                    "filter_query": '{signal} eq "NEUTRAL"',
+                    "column_id": "strike",
+                },
+                "backgroundColor": "rgba(158, 158, 158, 0.1)",
+            },
             # Green background for Call OI column (Requirement 2.6)
             {
                 "if": {"column_id": "call_oi"},

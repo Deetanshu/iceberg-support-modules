@@ -23,6 +23,36 @@ from .models import (
 IST = pytz.timezone("Asia/Kolkata")
 
 
+def derive_signal_from_skew(skew: Optional[float]) -> str:
+    """
+    Derive signal from skew value using standard thresholds.
+    
+    Thresholds (from product.md):
+    - ≥0.6 → STRONG_BUY
+    - >0.3 → BUY
+    - ≤-0.6 → STRONG_SELL
+    - <-0.3 → SELL
+    - else → NEUTRAL
+    
+    Args:
+        skew: Skew value (can be None)
+    
+    Returns:
+        Signal string
+    """
+    if skew is None:
+        return "NEUTRAL"
+    if skew >= 0.6:
+        return "STRONG_BUY"
+    if skew > 0.3:
+        return "BUY"
+    if skew <= -0.6:
+        return "STRONG_SELL"
+    if skew < -0.3:
+        return "SELL"
+    return "NEUTRAL"
+
+
 def parse_timestamp(ts_value: Any) -> datetime:
     """
     Parse a timestamp value into a datetime object with IST timezone.
@@ -198,19 +228,25 @@ def parse_columnar_option_chain(oc_raw: Dict[str, Any]) -> Optional[OptionChainD
     call_coi_list = columns.get("call_coi", [])
     put_coi_list = columns.get("put_coi", [])
     skew_list = columns.get("skew", columns.get("strike_skew", []))
+    signal_list = columns.get("signal", [])
 
     strikes = []
     for i in range(len(strike_list)):
         try:
+            skew_val = float(skew_list[i]) if i < len(skew_list) and skew_list[i] is not None else None
+            # Use signal from API if available, otherwise derive from skew
+            signal_val = signal_list[i] if i < len(signal_list) and signal_list[i] else derive_signal_from_skew(skew_val)
+            
             strike = OptionStrike(
                 strike=float(strike_list[i]),
                 call_oi=int(call_oi_list[i]) if i < len(call_oi_list) else 0,
                 put_oi=int(put_oi_list[i]) if i < len(put_oi_list) else 0,
                 call_coi=int(call_coi_list[i]) if i < len(call_coi_list) and call_coi_list[i] is not None else None,
                 put_coi=int(put_coi_list[i]) if i < len(put_coi_list) and put_coi_list[i] is not None else None,
-                strike_skew=float(skew_list[i]) if i < len(skew_list) and skew_list[i] is not None else None,
+                strike_skew=skew_val,
                 call_ltp=None,
                 put_ltp=None,
+                signal=signal_val,
             )
             strikes.append(strike)
         except (ValueError, TypeError, IndexError):
@@ -237,11 +273,15 @@ def parse_indicator_series(indicator_raw: Dict[str, Any]) -> Optional[IndicatorD
     if not indicator_raw:
         return None
 
+    # Convert adr to float if it's a string (API may return string)
+    adr_raw = indicator_raw.get("adr")
+    adr_value = float(adr_raw) if adr_raw is not None else None
+
     return IndicatorData(
         skew=indicator_raw.get("skew"),
         raw_skew=indicator_raw.get("raw_skew"),
         pcr=indicator_raw.get("pcr"),
-        adr=indicator_raw.get("adr"),
+        adr=adr_value,
         signal=indicator_raw.get("signal", "NEUTRAL"),
         skew_confidence=float(indicator_raw.get("skew_confidence", 0.0)),
         rsi=indicator_raw.get("rsi"),
@@ -454,11 +494,20 @@ def parse_indicator_update(event: Dict[str, Any]) -> Tuple[str, str, IndicatorDa
     mode = event.get("mode", "current").lower()
     ind = event.get("indicators", event.get("data", {}))
 
+    # Convert adr to float if it's a string (API returns string in SSE)
+    adr_raw = ind.get("adr")
+    adr_value = float(adr_raw) if adr_raw is not None else None
+    
+    # Extract COI sums from support_fields
+    support_fields = event.get("support_fields", {})
+    call_coi_sum = support_fields.get("call_coi_sum")
+    put_coi_sum = support_fields.get("put_coi_sum")
+    
     indicator_data = IndicatorData(
         skew=ind.get("skew"),
         raw_skew=ind.get("raw_skew"),
         pcr=ind.get("pcr"),
-        adr=ind.get("adr"),
+        adr=adr_value,
         signal=ind.get("signal", "NEUTRAL"),
         skew_confidence=float(ind.get("skew_confidence", 0.0)),
         rsi=ind.get("rsi"),
@@ -473,6 +522,8 @@ def parse_indicator_update(event: Dict[str, Any]) -> Tuple[str, str, IndicatorDa
         vwap=ind.get("vwap"),
         pivot_point=ind.get("pivot_point"),
         intuition_text=event.get("intuition_text"),  # AI-generated insight
+        call_coi_sum=float(call_coi_sum) if call_coi_sum is not None else None,
+        put_coi_sum=float(put_coi_sum) if put_coi_sum is not None else None,
         ts=parse_timestamp(event.get("timestamp", event.get("ts"))),
     )
 
@@ -500,15 +551,20 @@ def parse_option_chain_update(event: Dict[str, Any]) -> Tuple[str, str, OptionCh
 
     for s in strikes_data:
         try:
+            skew_val = float(s["strike_skew"]) if s.get("strike_skew") is not None else None
+            # Use signal from SSE if available, otherwise derive from skew
+            signal_val = s.get("signal") if s.get("signal") else derive_signal_from_skew(skew_val)
+            
             strike = OptionStrike(
                 strike=float(s.get("strike", 0)),
                 call_oi=int(s.get("call_oi", 0)),
                 put_oi=int(s.get("put_oi", 0)),
                 call_coi=int(s["call_coi"]) if s.get("call_coi") is not None else None,
                 put_coi=int(s["put_coi"]) if s.get("put_coi") is not None else None,
-                strike_skew=float(s["strike_skew"]) if s.get("strike_skew") is not None else None,
+                strike_skew=skew_val,
                 call_ltp=float(s["call_ltp"]) if s.get("call_ltp") is not None else None,
                 put_ltp=float(s["put_ltp"]) if s.get("put_ltp") is not None else None,
+                signal=signal_val,
             )
             strikes.append(strike)
         except (ValueError, TypeError, KeyError):
