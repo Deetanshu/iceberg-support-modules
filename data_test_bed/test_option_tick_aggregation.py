@@ -138,7 +138,7 @@ async def aggregate_option_ticks_to_candles(
                 symbol, expiry, strike, option_type, ts, ltp, oi, volume,
                 date_trunc('hour', ts) + INTERVAL '5 minute' * FLOOR(EXTRACT(minute FROM ts) / 5) as bucket_ts
             FROM {TEST_SCHEMA}.option_chain_ticks
-            WHERE ts >= NOW() - INTERVAL '{lookback_seconds} seconds'
+            WHERE ts >= NOW() - make_interval(secs => {lookback_seconds})
         ),
         aggregated AS (
             SELECT 
