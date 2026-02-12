@@ -11,6 +11,8 @@ numpy>=1.24.0
 # HTTP clients
 httpx>=0.26.0
 websocket-client>=1.7.0
+sseclient-py>=1.8.0
+requests>=2.31.0
 
 # Configuration
 pydantic>=2.5.0
