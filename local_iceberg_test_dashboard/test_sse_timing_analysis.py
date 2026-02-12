@@ -67,6 +67,7 @@ class IndicatorUpdateRecord:
     candle_ts: Optional[str]  # ISO timestamp of the candle bucket
     candle_close_time: Optional[str]  # candle_ts + 5 minutes
     delay_from_candle_close_seconds: Optional[float]  # How long after candle close we received this
+    is_first_update: bool  # True if this is the first update for this (symbol, mode, candle_ts)
     skew: Optional[float]
     pcr: Optional[float]
     raw_event: Dict[str, Any]
@@ -179,6 +180,11 @@ class SSETimingAnalyzer:
         # Tick timing tracking
         self._last_tick_time_by_symbol: Dict[str, float] = {}
         self._tick_intervals_by_symbol: Dict[str, List[float]] = defaultdict(list)
+        
+        # Track seen candle timestamps to only count FIRST update per candle
+        # Key: (symbol, mode, candle_ts) for indicators, (symbol, candle_ts) for candles
+        self._seen_indicator_candles: set = set()
+        self._seen_candle_updates: set = set()
     
     def _log(self, level: str, component: str, message: str, **kwargs):
         """Log with timestamp and structured data."""
@@ -318,6 +324,12 @@ class SSETimingAnalyzer:
         mode = data.get("mode", "")
         candle_ts = data.get("candle_ts")  # FIX-070: New field
         
+        # Check if this is the FIRST update for this (symbol, mode, candle_ts)
+        candle_key = (symbol, mode, candle_ts)
+        is_first_update = candle_key not in self._seen_indicator_candles
+        if candle_ts:
+            self._seen_indicator_candles.add(candle_key)
+        
         # Calculate delay from candle close
         candle_close_time, _ = self._calculate_candle_close_time(candle_ts)
         delay = self._calculate_delay_from_candle_close(received_at, candle_ts)
@@ -335,6 +347,7 @@ class SSETimingAnalyzer:
             candle_ts=candle_ts,
             candle_close_time=candle_close_time,
             delay_from_candle_close_seconds=delay,
+            is_first_update=is_first_update,
             skew=skew,
             pcr=pcr,
             raw_event=data,
@@ -342,7 +355,8 @@ class SSETimingAnalyzer:
         self.indicator_updates.append(record)
         
         delay_str = f"{delay:.1f}s" if delay is not None else "N/A"
-        self._log("INFO", "SSE", f"indicator_update {symbol}/{mode}", 
+        first_str = "[FIRST]" if is_first_update else "[REPEAT]"
+        self._log("INFO", "SSE", f"indicator_update {symbol}/{mode} {first_str}", 
                   candle_ts=candle_ts, delay=delay_str)
     
     def _handle_candle_update(self, received_at: float, received_at_iso: str, data: Dict[str, Any]):
@@ -515,51 +529,67 @@ class SSETimingAnalyzer:
     
     def _compute_indicator_update_stats(self) -> Dict[str, Any]:
         """Compute statistics for indicator updates."""
+        # Filter to only FIRST updates per candle for timing statistics
+        first_updates = [r for r in self.indicator_updates if r.is_first_update]
+        
         stats = {
             "total_count": len(self.indicator_updates),
+            "first_update_count": len(first_updates),
+            "repeat_update_count": len(self.indicator_updates) - len(first_updates),
             "by_symbol": {},
             "by_symbol_mode": {},
-            "overall_delay": TimingStats(),
+            "overall_delay": TimingStats(),  # Only from FIRST updates
         }
         
-        # Group by symbol
+        # Group FIRST updates by symbol
         by_symbol: Dict[str, List[IndicatorUpdateRecord]] = defaultdict(list)
-        for record in self.indicator_updates:
+        for record in first_updates:
             by_symbol[record.symbol].append(record)
         
-        # Group by (symbol, mode)
+        # Group FIRST updates by (symbol, mode)
         by_symbol_mode: Dict[str, List[IndicatorUpdateRecord]] = defaultdict(list)
-        for record in self.indicator_updates:
+        for record in first_updates:
             key = f"{record.symbol}:{record.mode}"
             by_symbol_mode[key].append(record)
         
-        # Compute stats by symbol
+        # Compute stats by symbol (FIRST updates only)
         for symbol, records in by_symbol.items():
             delays = [r.delay_from_candle_close_seconds * 1000 
                       for r in records if r.delay_from_candle_close_seconds is not None]
             symbol_stats = TimingStats()
             symbol_stats.compute(delays)
+            
+            # Count total and first for this symbol
+            total_for_symbol = len([r for r in self.indicator_updates if r.symbol == symbol])
+            
             stats["by_symbol"][symbol] = {
-                "count": len(records),
+                "total_count": total_for_symbol,
+                "first_update_count": len(records),
                 "with_candle_ts": sum(1 for r in records if r.candle_ts),
                 "delay_stats": asdict(symbol_stats),
             }
         
-        # Compute stats by (symbol, mode)
+        # Compute stats by (symbol, mode) (FIRST updates only)
         for key, records in by_symbol_mode.items():
             delays = [r.delay_from_candle_close_seconds * 1000 
                       for r in records if r.delay_from_candle_close_seconds is not None]
             key_stats = TimingStats()
             key_stats.compute(delays)
+            
+            # Count total for this key
+            symbol, mode = key.split(":")
+            total_for_key = len([r for r in self.indicator_updates if r.symbol == symbol and r.mode == mode])
+            
             stats["by_symbol_mode"][key] = {
-                "count": len(records),
+                "total_count": total_for_key,
+                "first_update_count": len(records),
                 "with_candle_ts": sum(1 for r in records if r.candle_ts),
                 "delay_stats": asdict(key_stats),
             }
         
-        # Overall delay stats
+        # Overall delay stats (FIRST updates only)
         all_delays = [r.delay_from_candle_close_seconds * 1000 
-                      for r in self.indicator_updates if r.delay_from_candle_close_seconds is not None]
+                      for r in first_updates if r.delay_from_candle_close_seconds is not None]
         stats["overall_delay"].compute(all_delays)
         stats["overall_delay"] = asdict(stats["overall_delay"])
         
@@ -807,7 +837,11 @@ class SSETimingAnalyzer:
         
         # Indicator Update Analysis
         lines.append("\n## Indicator Update Timing Analysis")
-        lines.append("\n### Overall Delay from Candle Close")
+        lines.append(f"\n- Total Updates: {stats['indicator_update_stats']['total_count']}")
+        lines.append(f"- First Updates (unique candles): {stats['indicator_update_stats']['first_update_count']}")
+        lines.append(f"- Repeat Updates: {stats['indicator_update_stats']['repeat_update_count']}")
+        
+        lines.append("\n### Overall Delay from Candle Close (First Updates Only)")
         ind_stats = stats["indicator_update_stats"]["overall_delay"]
         if ind_stats["count"] > 0:
             lines.append(f"- Count: {ind_stats['count']}")
@@ -818,20 +852,20 @@ class SSETimingAnalyzer:
         else:
             lines.append("- No data with candle_ts available")
         
-        lines.append("\n### By Symbol")
+        lines.append("\n### By Symbol (First Updates Only)")
         for symbol, data in stats["indicator_update_stats"]["by_symbol"].items():
             lines.append(f"\n**{symbol.upper()}:**")
-            lines.append(f"- Count: {data['count']}")
+            lines.append(f"- Total Updates: {data['total_count']}, First Updates: {data['first_update_count']}")
             lines.append(f"- With candle_ts: {data['with_candle_ts']}")
             if data["delay_stats"]["count"] > 0:
                 ds = data["delay_stats"]
                 lines.append(f"- Delay Mean: {ds['mean_ms']:.0f}ms ({ds['mean_ms']/1000:.1f}s)")
                 lines.append(f"- Delay Median: {ds['median_ms']:.0f}ms ({ds['median_ms']/1000:.1f}s)")
         
-        lines.append("\n### By Symbol + Mode")
+        lines.append("\n### By Symbol + Mode (First Updates Only)")
         for key, data in stats["indicator_update_stats"]["by_symbol_mode"].items():
             lines.append(f"\n**{key}:**")
-            lines.append(f"- Count: {data['count']}")
+            lines.append(f"- Total Updates: {data['total_count']}, First Updates: {data['first_update_count']}")
             lines.append(f"- With candle_ts: {data['with_candle_ts']}")
             if data["delay_stats"]["count"] > 0:
                 ds = data["delay_stats"]
@@ -916,16 +950,19 @@ class SSETimingAnalyzer:
         
         # Indicator delay summary
         print("\n--- INDICATOR UPDATE DELAY (from candle close) ---")
+        first_updates = [r for r in self.indicator_updates if r.is_first_update]
+        print(f"  Total updates: {len(self.indicator_updates)} (First: {len(first_updates)}, Repeat: {len(self.indicator_updates) - len(first_updates)})")
+        
         delays = [r.delay_from_candle_close_seconds 
-                  for r in self.indicator_updates if r.delay_from_candle_close_seconds is not None]
+                  for r in first_updates if r.delay_from_candle_close_seconds is not None]
         if delays:
-            print(f"  Count with candle_ts: {len(delays)}")
-            print(f"  Mean: {statistics.mean(delays):.1f}s")
-            print(f"  Median: {statistics.median(delays):.1f}s")
-            print(f"  Min: {min(delays):.1f}s")
-            print(f"  Max: {max(delays):.1f}s")
+            print(f"  First Update Delays (count={len(delays)}):")
+            print(f"    Mean: {statistics.mean(delays):.1f}s")
+            print(f"    Median: {statistics.median(delays):.1f}s")
+            print(f"    Min: {min(delays):.1f}s")
+            print(f"    Max: {max(delays):.1f}s")
         else:
-            print("  No data with candle_ts available")
+            print("  No first update data with candle_ts available")
         
         # Candle delay summary
         print("\n--- CANDLE UPDATE DELAY (from candle close) ---")
@@ -951,10 +988,11 @@ class SSETimingAnalyzer:
             print(f"    Median: {statistics.median(in_progress_early):.1f}s before close")
         
         # By symbol breakdown
-        print("\n--- INDICATOR UPDATES BY SYMBOL ---")
+        print("\n--- INDICATOR UPDATES BY SYMBOL (First Updates Only) ---")
         by_symbol: Dict[str, List[IndicatorUpdateRecord]] = defaultdict(list)
         for r in self.indicator_updates:
-            by_symbol[r.symbol].append(r)
+            if r.is_first_update:
+                by_symbol[r.symbol].append(r)
         for symbol in sorted(by_symbol.keys()):
             records = by_symbol[symbol]
             delays = [r.delay_from_candle_close_seconds for r in records if r.delay_from_candle_close_seconds is not None]
@@ -963,11 +1001,12 @@ class SSETimingAnalyzer:
             else:
                 print(f"  {symbol}: count={len(records)}, no candle_ts data")
         
-        print("\n--- INDICATOR UPDATES BY SYMBOL+MODE ---")
+        print("\n--- INDICATOR UPDATES BY SYMBOL+MODE (First Updates Only) ---")
         by_key: Dict[str, List[IndicatorUpdateRecord]] = defaultdict(list)
         for r in self.indicator_updates:
-            key = f"{r.symbol}:{r.mode}"
-            by_key[key].append(r)
+            if r.is_first_update:
+                key = f"{r.symbol}:{r.mode}"
+                by_key[key].append(r)
         for key in sorted(by_key.keys()):
             records = by_key[key]
             delays = [r.delay_from_candle_close_seconds for r in records if r.delay_from_candle_close_seconds is not None]
