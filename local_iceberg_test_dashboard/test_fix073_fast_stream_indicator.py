@@ -13,16 +13,18 @@ Expected behavior per FIX-073:
 - T+5.3s: API Layer broadcasts `indicator_update` to Fast Stream WebSocket clients
 - T+~6s: Client receives indicator_update (TARGET: <10 seconds)
 
-Event format (FIX-073):
+Event format (FIX-073_2):
 {
-    "event_type": "indicator_update",
+    "event": "indicator_update",
     "ts": "2026-02-25T09:35:05.123456+00:00",
     "symbol": "nifty",
     "mode": "current",
-    "skew": 0.15,
-    "pcr": 1.23,
-    "signal": "BUY",
-    "candle_ts": "2026-02-25T09:30:00+00:00"
+    "data": {
+        "skew": 0.15,
+        "pcr": 1.23,
+        "signal": "BUY",
+        "candle_ts": "2026-02-25T09:30:00+00:00"
+    }
 }
 
 Usage:
@@ -203,12 +205,14 @@ class FIX073Validator:
     
     def _handle_indicator_update(self, received_at: float, received_at_iso: str, data: Dict[str, Any]):
         """Handle indicator_update event - the core of FIX-073 validation."""
+        # FIX-073_2: Extract from data wrapper if present (backward compat with flat structure)
+        indicator_data = data.get("data", data)
         symbol = data.get("symbol", "").lower()
         mode = data.get("mode", "")
-        skew = data.get("skew")
-        pcr = data.get("pcr")
-        signal = data.get("signal")
-        candle_ts = data.get("candle_ts")
+        skew = indicator_data.get("skew")
+        pcr = indicator_data.get("pcr")
+        signal = indicator_data.get("signal")
+        candle_ts = indicator_data.get("candle_ts")
         event_ts = data.get("ts")
         
         # Calculate delay from candle close
